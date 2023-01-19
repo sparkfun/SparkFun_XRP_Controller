@@ -28918,6 +28918,8 @@ PH/EN mode to PWM mode</text>
 <text x="73.66" y="127" size="2.54" layer="97" font="vector" align="center">V_USB: 5.5V max!</text>
 <text x="157.48" y="261.62" size="2.54" layer="97" font="vector" align="center">32V max!</text>
 <text x="327.66" y="266.7" size="2.54" layer="97" font="vector" align="center">11V max!</text>
+<text x="210.82" y="15.24" size="2.54" layer="97" font="vector" align="center">Connect to GND
+to enable VIN</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -29340,8 +29342,8 @@ PH/EN mode to PWM mode</text>
 <instance part="Q6" gate="G$1" x="68.58" y="254" smashed="yes" rot="MR90">
 <attribute name="NAME" x="71.12" y="259.08" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
-<instance part="GND26" gate="1" x="218.44" y="22.86" smashed="yes">
-<attribute name="VALUE" x="218.44" y="22.606" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND26" gate="1" x="218.44" y="27.94" smashed="yes">
+<attribute name="VALUE" x="218.44" y="27.686" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="SUPPLY4" gate="G$1" x="91.44" y="259.08" smashed="yes">
 <attribute name="VALUE" x="91.44" y="261.874" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -29355,9 +29357,9 @@ PH/EN mode to PWM mode</text>
 <instance part="SUPPLY24" gate="G$1" x="10.16" y="208.28" smashed="yes">
 <attribute name="VALUE" x="10.16" y="211.074" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="S1" gate="1" x="210.82" y="30.48" smashed="yes">
-<attribute name="NAME" x="212.09" y="33.528" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="211.836" y="27.178" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="S1" gate="1" x="210.82" y="35.56" smashed="yes">
+<attribute name="NAME" x="212.09" y="38.608" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="211.836" y="32.258" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="SUPPLY6" gate="G$1" x="264.16" y="213.36" smashed="yes">
 <attribute name="VALUE" x="264.16" y="216.154" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -29635,8 +29637,8 @@ PH/EN mode to PWM mode</text>
 </segment>
 <segment>
 <pinref part="GND26" gate="1" pin="GND"/>
-<wire x1="218.44" y1="25.4" x2="218.44" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="27.94" x2="215.9" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="30.48" x2="218.44" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="33.02" x2="215.9" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="S1" gate="1" pin="S"/>
 </segment>
 <segment>
@@ -30463,7 +30465,7 @@ PH/EN mode to PWM mode</text>
 <pinref part="R13" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="!EN!" class="0">
+<net name="!POW_EN!" class="0">
 <segment>
 <wire x1="60.96" y1="228.6" x2="60.96" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="226.06" x2="58.42" y2="226.06" width="0.1524" layer="91"/>
@@ -30471,8 +30473,8 @@ PH/EN mode to PWM mode</text>
 <pinref part="R13" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="30.48" x2="205.74" y2="30.48" width="0.1524" layer="91"/>
-<label x="205.74" y="30.48" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="208.28" y1="35.56" x2="205.74" y2="35.56" width="0.1524" layer="91"/>
+<label x="205.74" y="35.56" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="S1" gate="1" pin="P"/>
 </segment>
 </net>

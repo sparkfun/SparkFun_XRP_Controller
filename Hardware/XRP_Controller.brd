@@ -309,6 +309,18 @@
 <rectangle x1="5.461" y1="44.196" x2="12.319" y2="44.323" layer="21"/>
 <rectangle x1="44.831" y1="45.72" x2="45.085" y2="45.847" layer="21"/>
 <rectangle x1="44.831" y1="44.323" x2="45.085" y2="44.45" layer="21"/>
+<wire x1="11.1125" y1="24.13" x2="11.1125" y2="26.67" width="0.1778" layer="21"/>
+<wire x1="14.9225" y1="24.13" x2="14.9225" y2="26.67" width="0.1778" layer="21"/>
+<wire x1="18.7325" y1="24.13" x2="18.7325" y2="26.67" width="0.1778" layer="21"/>
+<wire x1="13.0175" y1="26.67" x2="13.0175" y2="24.13" width="0.1778" layer="21"/>
+<wire x1="16.8275" y1="26.67" x2="16.8275" y2="24.13" width="0.1778" layer="21"/>
+<wire x1="8.89" y1="12.3825" x2="6.35" y2="12.3825" width="0.1778" layer="21"/>
+<wire x1="54.61" y1="8.5725" x2="52.07" y2="8.5725" width="0.1778" layer="21"/>
+<wire x1="45.72" y1="19.3675" x2="48.26" y2="19.3675" width="0.1778" layer="21"/>
+<wire x1="50.4825" y1="27.94" x2="50.4825" y2="30.48" width="0.1778" layer="21"/>
+<wire x1="52.3875" y1="30.48" x2="52.3875" y2="27.94" width="0.1778" layer="21"/>
+<wire x1="48.5775" y1="30.48" x2="48.5775" y2="27.94" width="0.1778" layer="21"/>
+<wire x1="11.1125" y1="35.56" x2="11.1125" y2="38.1" width="0.1778" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -15068,7 +15080,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <wire x1="7.62" y1="8.89" x2="7.62" y2="10.58" width="0.254" layer="1"/>
 <wire x1="7.62" y1="10.58" x2="8.47" y2="11.43" width="0.254" layer="1"/>
 </signal>
-<signal name="!EN!">
+<signal name="!POW_EN!">
 <contactref element="S1" pad="2"/>
 <contactref element="R13" pad="1"/>
 <wire x1="4.925" y1="9.41" x2="4.925" y2="10.601" width="0.254" layer="1"/>
