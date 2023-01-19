@@ -28850,6 +28850,7 @@ Switches electrical signals</description>
 <part name="GND27" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND28" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="Q7" library="SparkFun-DiscreteSemi" deviceset="TRANS_PNP_DUAL" device="SOT-363" package3d_urn="urn:adsk.eagle:package:29757/2"/>
+<part name="C14" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -28938,11 +28939,11 @@ PH/EN mode to PWM mode</text>
 <instance part="H2" gate="G$1" x="429.26" y="27.94" smashed="yes"/>
 <instance part="H3" gate="G$1" x="426.72" y="27.94" smashed="yes"/>
 <instance part="H4" gate="G$1" x="426.72" y="25.4" smashed="yes"/>
-<instance part="RESET" gate="G$1" x="213.36" y="83.82" smashed="yes" rot="R180">
-<attribute name="NAME" x="213.36" y="82.296" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<instance part="RESET" gate="G$1" x="208.28" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="206.756" y="83.82" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 </instance>
-<instance part="GND10" gate="1" x="220.98" y="78.74" smashed="yes">
-<attribute name="VALUE" x="220.98" y="78.486" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND10" gate="1" x="208.28" y="71.12" smashed="yes">
+<attribute name="VALUE" x="208.28" y="70.866" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="D1" gate="G$1" x="152.4" y="71.12" smashed="yes">
 <attribute name="NAME" x="148.971" y="66.548" size="1.778" layer="95" font="vector" rot="R90"/>
@@ -29409,6 +29410,10 @@ PH/EN mode to PWM mode</text>
 <attribute name="NAME" x="38.1" y="96.52" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="38.1" y="96.266" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
+<instance part="C14" gate="G$1" x="213.36" y="81.28" smashed="yes">
+<attribute name="NAME" x="214.884" y="84.201" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="214.884" y="79.121" size="1.778" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -29417,8 +29422,12 @@ PH/EN mode to PWM mode</text>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="RESET" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="83.82" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="83.82" x2="220.98" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="78.74" x2="208.28" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="76.2" x2="208.28" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="78.74" x2="213.36" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="76.2" x2="208.28" y2="76.2" width="0.1524" layer="91"/>
+<junction x="208.28" y="76.2"/>
 </segment>
 <segment>
 <pinref part="PWR" gate="G$1" pin="1"/>
@@ -29769,8 +29778,13 @@ PH/EN mode to PWM mode</text>
 <net name="!RP_RESET!" class="0">
 <segment>
 <pinref part="RESET" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="83.82" x2="205.74" y2="83.82" width="0.1524" layer="91"/>
-<label x="205.74" y="83.82" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<label x="205.74" y="91.44" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="91.44" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="91.44" x2="213.36" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="91.44" x2="213.36" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="88.9" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
+<junction x="208.28" y="91.44"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="RUN"/>
