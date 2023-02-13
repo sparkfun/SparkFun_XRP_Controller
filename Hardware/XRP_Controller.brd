@@ -2436,15 +2436,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <library name="Buck5V">
 <packages>
 <package name="V-DFN3020-13">
-<smd name="P$1" x="-0.675" y="-0.75" dx="1.5" dy="0.8" layer="1" stop="no" thermals="no"/>
-<smd name="P$8" x="-0.675" y="0.75" dx="1.5" dy="0.8" layer="1" stop="no" thermals="no"/>
-<smd name="P$9" x="-0.79" y="0" dx="1.73" dy="0.4" layer="1" stop="no" thermals="no"/>
-<smd name="P$2" x="0.375" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no"/>
-<smd name="P$3" x="0.825" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no"/>
-<smd name="P$4" x="1.275" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no"/>
-<smd name="P$5" x="1.275" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
-<smd name="P$6" x="0.825" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
-<smd name="P$7" x="0.375" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<smd name="P$1" x="-0.675" y="-0.75" dx="1.5" dy="0.8" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$8" x="-0.675" y="0.75" dx="1.5" dy="0.8" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$9" x="-0.79" y="0" dx="1.73" dy="0.4" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$2" x="0.375" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$3" x="0.825" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$4" x="1.275" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$5" x="1.275" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="P$6" x="0.825" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="P$7" x="0.375" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
 <wire x1="-1.5" y1="1.05" x2="-1.5" y2="-1.05" width="0.1" layer="51"/>
 <wire x1="-1.5" y1="-1.05" x2="1.5" y2="-1.05" width="0.1" layer="51"/>
 <wire x1="1.5" y1="-1.05" x2="1.5" y2="1.05" width="0.1" layer="51"/>
@@ -2463,6 +2463,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="1.08" y1="0.5" x2="1.47" y2="1.2" layer="29"/>
 <rectangle x1="-1.47" y1="0.3" x2="0.12" y2="1.2" layer="29"/>
 <rectangle x1="-1.7" y1="-0.25" x2="0.13" y2="0.25" layer="29"/>
+<rectangle x1="-1.48" y1="-0.15" x2="-0.18" y2="0.15" layer="31"/>
+<rectangle x1="-1.24" y1="-1.05" x2="-0.11" y2="-0.45" layer="31"/>
+<rectangle x1="-1.25" y1="0.45" x2="-0.12" y2="1.05" layer="31"/>
+<rectangle x1="0.26" y1="-1.08" x2="0.49" y2="-0.63" layer="31"/>
+<rectangle x1="0.71" y1="-1.08" x2="0.94" y2="-0.63" layer="31"/>
+<rectangle x1="1.16" y1="-1.08" x2="1.39" y2="-0.63" layer="31"/>
+<rectangle x1="1.16" y1="0.63" x2="1.39" y2="1.08" layer="31"/>
+<rectangle x1="0.71" y1="0.63" x2="0.94" y2="1.08" layer="31"/>
+<rectangle x1="0.26" y1="0.63" x2="0.49" y2="1.08" layer="31"/>
 </package>
 <package name="07A7_6U8H">
 <smd name="P$1" x="-2.775" y="0" dx="1.85" dy="3.5" layer="1"/>
