@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
@@ -202,21 +202,21 @@
 <rectangle x1="51.308" y1="45.847" x2="52.578" y2="49.657" layer="21"/>
 <rectangle x1="52.578" y1="48.768" x2="56.642" y2="49.657" layer="21"/>
 <rectangle x1="52.578" y1="45.847" x2="56.642" y2="46.101" layer="21"/>
-<rectangle x1="58.547" y1="22.098" x2="61.341" y2="23.114" layer="21"/>
-<rectangle x1="58.547" y1="14.986" x2="61.341" y2="16.002" layer="21"/>
-<rectangle x1="58.547" y1="19.558" x2="61.341" y2="21.082" layer="21"/>
-<rectangle x1="58.547" y1="17.018" x2="61.341" y2="18.542" layer="21"/>
-<rectangle x1="58.547" y1="18.542" x2="59.309" y2="19.558" layer="21"/>
-<rectangle x1="61.341" y1="14.986" x2="63.5" y2="23.114" layer="21"/>
+<rectangle x1="58.293" y1="22.098" x2="61.087" y2="23.114" layer="21"/>
+<rectangle x1="58.293" y1="14.986" x2="61.087" y2="16.002" layer="21"/>
+<rectangle x1="58.293" y1="19.558" x2="61.087" y2="21.082" layer="21"/>
+<rectangle x1="58.293" y1="17.018" x2="61.087" y2="18.542" layer="21"/>
+<rectangle x1="58.293" y1="18.542" x2="59.055" y2="19.558" layer="21"/>
+<rectangle x1="61.087" y1="14.986" x2="63.5" y2="23.114" layer="21"/>
 <rectangle x1="51.308" y1="44.323" x2="51.435" y2="45.847" layer="21"/>
 <rectangle x1="57.785" y1="44.323" x2="57.9628" y2="45.847" layer="21"/>
 <rectangle x1="51.308" y1="44.196" x2="57.9628" y2="44.323" layer="21"/>
 <rectangle x1="7.62" y1="23.495" x2="9.144" y2="24.003" layer="21"/>
 <rectangle x1="7.62" y1="31.877" x2="9.144" y2="32.385" layer="21"/>
 <rectangle x1="9.017" y1="24.003" x2="9.144" y2="31.877" layer="21"/>
-<rectangle x1="56.896" y1="22.86" x2="58.547" y2="23.114" layer="21"/>
-<rectangle x1="56.896" y1="14.986" x2="58.547" y2="15.24" layer="21"/>
-<rectangle x1="56.896" y1="15.24" x2="57.023" y2="22.86" layer="21"/>
+<rectangle x1="56.642" y1="22.86" x2="58.293" y2="23.114" layer="21"/>
+<rectangle x1="56.642" y1="14.986" x2="58.293" y2="15.24" layer="21"/>
+<rectangle x1="56.642" y1="15.24" x2="56.769" y2="22.86" layer="21"/>
 <circle x="53.34" y="22.225" radius="0.0635" width="0.254" layer="21"/>
 <circle x="53.34" y="22.225" radius="0.508" width="0.254" layer="21"/>
 <wire x1="53.975" y1="20.955" x2="55.88" y2="20.955" width="0.254" layer="21" style="shortdash"/>
@@ -256,15 +256,15 @@
 <rectangle x1="9.398" y1="15.748" x2="10.668" y2="17.399" layer="21"/>
 <rectangle x1="17.272" y1="15.748" x2="18.542" y2="17.399" layer="21"/>
 <rectangle x1="10.668" y1="17.272" x2="17.272" y2="17.399" layer="21"/>
-<rectangle x1="2.159" y1="14.986" x2="4.953" y2="16.002" layer="21" rot="R180"/>
-<rectangle x1="2.159" y1="22.098" x2="4.953" y2="23.114" layer="21" rot="R180"/>
-<rectangle x1="2.159" y1="17.018" x2="4.953" y2="18.542" layer="21" rot="R180"/>
-<rectangle x1="2.159" y1="19.558" x2="4.953" y2="21.082" layer="21" rot="R180"/>
-<rectangle x1="4.191" y1="18.542" x2="4.953" y2="19.558" layer="21" rot="R180"/>
-<rectangle x1="0" y1="14.986" x2="2.159" y2="23.114" layer="21" rot="R180"/>
-<rectangle x1="4.953" y1="14.986" x2="6.604" y2="15.24" layer="21" rot="R180"/>
-<rectangle x1="4.953" y1="22.86" x2="6.604" y2="23.114" layer="21" rot="R180"/>
-<rectangle x1="6.477" y1="15.24" x2="6.604" y2="22.86" layer="21" rot="R180"/>
+<rectangle x1="2.413" y1="14.986" x2="5.207" y2="16.002" layer="21" rot="R180"/>
+<rectangle x1="2.413" y1="22.098" x2="5.207" y2="23.114" layer="21" rot="R180"/>
+<rectangle x1="2.413" y1="17.018" x2="5.207" y2="18.542" layer="21" rot="R180"/>
+<rectangle x1="2.413" y1="19.558" x2="5.207" y2="21.082" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="18.542" x2="5.207" y2="19.558" layer="21" rot="R180"/>
+<rectangle x1="0" y1="14.986" x2="2.413" y2="23.114" layer="21"/>
+<rectangle x1="5.207" y1="14.986" x2="6.858" y2="15.24" layer="21" rot="R180"/>
+<rectangle x1="5.207" y1="22.86" x2="6.858" y2="23.114" layer="21" rot="R180"/>
+<rectangle x1="6.731" y1="15.24" x2="6.858" y2="22.86" layer="21" rot="R180"/>
 <rectangle x1="4.318" y1="41.148" x2="7.62" y2="42.545" layer="21"/>
 <rectangle x1="4.318" y1="33.655" x2="7.62" y2="35.052" layer="21"/>
 <rectangle x1="4.318" y1="35.052" x2="4.699" y2="41.148" layer="21"/>
@@ -15250,12 +15250,12 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <element name="U$51" library="output" package="#3V3#0" value="" x="54.102" y="49.149" smashed="yes" rot="R270"/>
 <element name="U$52" library="output" package="#GND#0" value="" x="46.101" y="49.149" smashed="yes" rot="R270"/>
 <element name="U$53" library="output" package="#3V3#0" value="" x="47.117" y="49.149" smashed="yes" rot="R270"/>
-<element name="U$54" library="output" package="#GND#0" value="" x="1.905" y="16.51" smashed="yes"/>
-<element name="U$55" library="output" package="#5V#0" value="" x="1.905" y="19.05" smashed="yes"/>
-<element name="U$56" library="output" package="#IO16#0" value="" x="1.905" y="21.59" smashed="yes"/>
-<element name="U$57" library="output" package="#GND#10" value="" x="61.595" y="16.51" smashed="yes"/>
-<element name="U$58" library="output" package="#IO17#0" value="" x="61.595" y="21.59" smashed="yes"/>
-<element name="U$59" library="output" package="#5V#18" value="" x="61.595" y="19.05" smashed="yes"/>
+<element name="U$54" library="output" package="#GND#0" value="" x="2.159" y="16.51" smashed="yes"/>
+<element name="U$55" library="output" package="#5V#0" value="" x="2.159" y="19.05" smashed="yes"/>
+<element name="U$56" library="output" package="#IO16#0" value="" x="2.159" y="21.59" smashed="yes"/>
+<element name="U$57" library="output" package="#GND#10" value="" x="61.341" y="16.51" smashed="yes"/>
+<element name="U$58" library="output" package="#IO17#0" value="" x="61.341" y="21.59" smashed="yes"/>
+<element name="U$59" library="output" package="#5V#18" value="" x="61.341" y="19.05" smashed="yes"/>
 <element name="Q3" library="SparkFun-DiscreteSemi" package="SOT23-3" value="20V/4.2A/52mΩ/1.4W" x="13.97" y="19.05" smashed="yes" rot="R180">
 <attribute name="NAME" x="15.621" y="19.05" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="TRANS-14388" x="13.97" y="19.05" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
@@ -15362,10 +15362,10 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <element name="U$74" library="output" package="#LINE#0" value="" x="8.89" y="45.085" smashed="yes"/>
 <element name="U$10" library="output" package="#MOTOR_L#0" value="" x="8.255" y="38.1" smashed="yes" rot="R90"/>
 <element name="U$1" library="output" package="#MOTOR_3#0" value="" x="8.255" y="27.94" smashed="yes" rot="R90"/>
-<element name="U$11" library="output" package="#SERVO_1#0" value="" x="5.715" y="19.05" smashed="yes" rot="R90"/>
+<element name="U$11" library="output" package="#SERVO_1#0" value="" x="5.969" y="19.05" smashed="yes" rot="R90"/>
 <element name="U$8" library="output" package="#MOTOR_R#0" value="" x="55.245" y="38.1" smashed="yes" rot="R270"/>
 <element name="U$12" library="output" package="#MOTOR_4#0" value="" x="55.245" y="27.94" smashed="yes" rot="R270"/>
-<element name="U$2" library="output" package="#SERVO_2#0" value="" x="57.785" y="19.05" smashed="yes" rot="R270"/>
+<element name="U$2" library="output" package="#SERVO_2#0" value="" x="57.531" y="19.05" smashed="yes" rot="R270"/>
 <element name="U$3" library="output" package="#11V_MAX###0" value="" x="19.304" y="4.445" smashed="yes" rot="R90"/>
 <element name="C14" library="SparkFun-Capacitors" package="0603" value="0.1uF" x="15.875" y="29.21" smashed="yes" rot="R90">
 <attribute name="NAME" x="15.113" y="29.21" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
@@ -15412,11 +15412,11 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <element name="TP33" library="SparkFun-Connectors" package="PAD.03X.05" value="TEST-POINT3X5" x="22.86" y="13.335" smashed="yes" rot="MR0"/>
 <element name="TP34" library="SparkFun-Connectors" package="PAD.03X.05" value="TEST-POINT3X5" x="58.42" y="6.35" smashed="yes" rot="MR0"/>
 <element name="TP35" library="SparkFun-Connectors" package="PAD.03X.05" value="TEST-POINT3X5" x="55.88" y="6.35" smashed="yes" rot="MR0"/>
-<element name="U$27" library="output" package="#5V_#0" value="" x="1.27" y="19.05" smashed="yes" rot="MR0"/>
+<element name="U$27" library="output" package="#5V_#0" value="" x="1.524" y="19.05" smashed="yes" rot="MR0"/>
 <element name="U$26" library="output" package="#GND_#0" value="" x="1.27" y="16.51" smashed="yes" rot="MR0"/>
 <element name="U$61" library="output" package="#IO16_#0" value="" x="1.27" y="21.59" smashed="yes" rot="MR0"/>
 <element name="U$75" library="output" package="#_GND#0" value="" x="62.23" y="16.51" smashed="yes" rot="MR0"/>
-<element name="U$76" library="output" package="#_5V#0" value="" x="62.23" y="19.05" smashed="yes" rot="MR0"/>
+<element name="U$76" library="output" package="#_5V#0" value="" x="61.976" y="19.05" smashed="yes" rot="MR0"/>
 <element name="U$77" library="output" package="#_IO17#0" value="" x="62.23" y="21.59" smashed="yes" rot="MR0"/>
 <element name="U$78" library="SparkFun-Aesthetics" package="POLARITY_MARKING_CENTER_POSITIVE#JPG" value="" x="5.207" y="3.175" smashed="yes" rot="R270"/>
 <element name="TP36" library="SparkFun-Connectors" package="PAD.03X.05" value="TEST-POINT3X5" x="34.29" y="19.05" smashed="yes" rot="MR0"/>
