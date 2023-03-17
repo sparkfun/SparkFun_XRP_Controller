@@ -21166,6 +21166,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-3.3681" y="-0.0101" curve="-90.012967"/>
 </polygon>
 </package>
+<package name="1206">
+<description>&lt;p&gt;&lt;b&gt;Generic 3216 (1206) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.0508" layer="39"/>
+<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.0508" layer="39"/>
+<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -21730,13 +21747,73 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="4.7OHM" prefix="R">
-<description>&lt;h3&gt;4.7Ω resistor&lt;/h3&gt;
+<deviceset name="10OHM" prefix="R">
+<description>&lt;h3&gt;10Ω resistor&lt;/h3&gt;
 &lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="-1206-1/4W-1%" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08705"/>
+<attribute name="VALUE" value="10"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT-1/4W-1%" package="AXIAL-0.1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12180"/>
+<attribute name="VALUE" value="10"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT_KIT-1/4W-1%" package="AXIAL-0.1-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12180"/>
+<attribute name="VALUE" value="10"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ-1/4W-1%" package="AXIAL-0.3">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12180"/>
+<attribute name="VALUE" value="10"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ_KIT-1/4W-1%" package="AXIAL-0.3-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12180"/>
+<attribute name="VALUE" value="10"/>
+</technology>
+</technologies>
+</device>
 <device name="-0603-1/10W-1%" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -21744,32 +21821,32 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-15581"/>
-<attribute name="VALUE" value="4.7"/>
+<attribute name="PROD_ID" value="RES-12581"/>
+<attribute name="VALUE" value="10"/>
 </technology>
 </technologies>
 </device>
-<device name="-0402T-1/16W-1%" package="0402-TIGHT">
+<device name="-0603-1/10W-5%" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-16312" constant="no"/>
-<attribute name="VALUE" value="4.7" constant="no"/>
+<attribute name="PROD_ID" value="RES-09834"/>
+<attribute name="VALUE" value="10"/>
 </technology>
 </technologies>
 </device>
-<device name="-0402-1/16W-1%" package="0402">
+<device name="-0402-1/16W-5%" package="0402-TIGHT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-16312" constant="no"/>
-<attribute name="VALUE" value="4.7" constant="no"/>
+<attribute name="PROD_ID" value="RES-16072" constant="no"/>
+<attribute name="VALUE" value="10Ω" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -24677,7 +24754,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="ADC_VREF" x="-17.78" y="17.78" length="short"/>
 <pin name="SWDIO" x="-17.78" y="-20.32" length="short"/>
 <pin name="SWCLK" x="-17.78" y="-17.78" length="short"/>
-<pin name="VBUS" x="-17.78" y="30.48" length="short"/>
+<pin name="VBUS" x="-17.78" y="25.4" length="short"/>
 <pin name="TP_WL_GPIO0" x="-17.78" y="-5.08" length="short"/>
 <pin name="TP_WL_GPIO1" x="-17.78" y="-7.62" length="short"/>
 <pin name="GPIO1" x="17.78" y="27.94" length="short" rot="R180"/>
@@ -24705,7 +24782,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="GPIO26/ADC0" x="17.78" y="-27.94" length="short" rot="R180"/>
 <pin name="GPIO27/ADC1" x="17.78" y="-30.48" length="short" rot="R180"/>
 <pin name="GPIO28/ADC2" x="17.78" y="-33.02" length="short" rot="R180"/>
-<pin name="3V3" x="-17.78" y="25.4" length="short"/>
+<pin name="3V3" x="-17.78" y="30.48" length="short"/>
 <pin name="TP_BOOTSEL" x="-17.78" y="-12.7" length="short"/>
 </symbol>
 </symbols>
@@ -25410,7 +25487,6 @@ Switches electrical signals</description>
 <part name="J12" library="SparkFun-Connectors" deviceset="QWIIC_CONNECTOR" device="" value="Vertical Qwiic Connector"/>
 <part name="J13" library="SparkFun-Connectors" deviceset="QWIIC_CONNECTOR" device="" value="Vertical Qwiic Connector"/>
 <part name="J14" library="SparkFun-Connectors" deviceset="QWIIC_CONNECTOR" device="" value="Vertical Qwiic Connector"/>
-<part name="U1" library="RPI_PICO_W" deviceset="RPI_PICO_W" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
@@ -25482,7 +25558,7 @@ Switches electrical signals</description>
 <part name="GND26" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
-<part name="VUSB" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
+<part name="VUSB" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="SUPPLY24" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
 <part name="S1" library="SparkFun-Switches" deviceset="SWITCH-SPDT" device="-SMD-RIGHT-ANGLE"/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
@@ -25553,7 +25629,9 @@ Switches electrical signals</description>
 <part name="SUPPLY37" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="R17" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
 <part name="USER_BTN" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
-<part name="R18" library="SparkFun-Resistors" deviceset="4.7OHM" device="-0603-1/10W-1%" value="4.7"/>
+<part name="R19" library="SparkFun-Resistors" deviceset="10OHM" device="-1206-1/4W-1%" value="10"/>
+<part name="R18" library="SparkFun-Resistors" deviceset="10OHM" device="-1206-1/4W-1%" value="10"/>
+<part name="U1" library="RPI_PICO_W" deviceset="RPI_PICO_W" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -25580,12 +25658,9 @@ remove pullup resistors</text>
 Close IMU_ADR jumper: 0x6A</text>
 <text x="20.32" y="172.72" size="2.54" layer="97" font="vector" align="center">Cut PWR jumper to
 remove power LED</text>
-<text x="43.18" y="91.44" size="2.54" layer="97" font="vector" align="center">Close VUSB jumper to
-power entire board from USB.
-WARNING!!! Do this at your own risk!
-Do not exceed USB power limitations!
-
-V_SYS: 5.5V max!</text>
+<text x="45.72" y="93.98" size="2.54" layer="97" font="vector" align="center">Open VUSB jumper to
+prevent motors and servos
+from being powered by USB</text>
 <wire x1="330.2" y1="73.66" x2="358.14" y2="73.66" width="0.2032" layer="97" style="longdash"/>
 <wire x1="330.2" y1="73.66" x2="330.2" y2="35.56" width="0.2032" layer="97" style="longdash"/>
 <text x="294.64" y="91.44" size="2.54" layer="97" font="vector" align="center">Cut MOT_MODE_L/R
@@ -25632,6 +25707,7 @@ to disconnect from IO28</text>
 <wire x1="88.9" y1="111.76" x2="0" y2="111.76" width="0.2032" layer="97" style="longdash"/>
 <text x="43.18" y="119.38" size="2.54" layer="97" font="vector" align="center">Cut USER_BTN jumper
 to disconnect from IO22</text>
+<text x="45.72" y="81.28" size="2.54" layer="97" font="vector" align="center">V_SYS: 5.5V max!</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -25804,10 +25880,6 @@ to disconnect from IO22</text>
 <attribute name="VALUE" x="317.246" y="5.08" size="1.778" layer="96" font="vector" rot="MR90" align="top-left"/>
 <attribute name="NAME" x="314.96" y="25.654" size="1.778" layer="95" font="vector" rot="MR0"/>
 </instance>
-<instance part="U1" gate="G$1" x="43.18" y="43.18" smashed="yes">
-<attribute name="NAME" x="27.94" y="76.454" size="1.778" layer="95"/>
-<attribute name="VALUE" x="27.94" y="5.08" size="1.778" layer="96"/>
-</instance>
 <instance part="GND1" gate="1" x="22.86" y="5.08" smashed="yes">
 <attribute name="VALUE" x="22.86" y="4.826" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
@@ -25869,8 +25941,8 @@ to disconnect from IO22</text>
 <instance part="SUPPLY10" gate="G$1" x="299.72" y="25.4" smashed="yes">
 <attribute name="VALUE" x="299.72" y="28.194" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY11" gate="G$1" x="7.62" y="88.9" smashed="yes">
-<attribute name="VALUE" x="7.62" y="91.694" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY11" gate="G$1" x="10.16" y="101.6" smashed="yes">
+<attribute name="VALUE" x="10.16" y="104.394" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="C6" gate="G$1" x="127" y="119.38" smashed="yes">
 <attribute name="NAME" x="128.524" y="122.301" size="1.778" layer="95" font="vector"/>
@@ -26058,8 +26130,8 @@ to disconnect from IO22</text>
 <instance part="SUPPLY5" gate="G$1" x="246.38" y="264.16" smashed="yes">
 <attribute name="VALUE" x="246.38" y="266.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="VUSB" gate="G$1" x="15.24" y="73.66" smashed="yes" rot="R180">
-<attribute name="NAME" x="15.24" y="76.454" size="1.778" layer="95" font="vector" align="center"/>
+<instance part="VUSB" gate="G$1" x="10.16" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="12.954" y="76.2" size="1.778" layer="95" font="vector" rot="R270" align="center"/>
 </instance>
 <instance part="SUPPLY24" gate="G$1" x="93.98" y="259.08" smashed="yes">
 <attribute name="VALUE" x="93.98" y="261.874" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -26286,9 +26358,17 @@ to disconnect from IO22</text>
 <instance part="USER_BTN" gate="G$1" x="33.02" y="144.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.02" y="147.828" size="1.778" layer="95" font="vector" align="center"/>
 </instance>
-<instance part="R18" gate="G$1" x="7.62" y="81.28" smashed="yes" rot="R270">
-<attribute name="NAME" x="9.144" y="81.28" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="6.096" y="81.28" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+<instance part="R19" gate="G$1" x="15.24" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.716" y="91.44" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="16.764" y="91.44" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R18" gate="G$1" x="5.08" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.556" y="91.44" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="6.604" y="91.44" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="U1" gate="G$1" x="43.18" y="43.18" smashed="yes">
+<attribute name="NAME" x="27.94" y="76.454" size="1.778" layer="95"/>
+<attribute name="VALUE" x="27.94" y="5.08" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -26383,11 +26463,11 @@ to disconnect from IO22</text>
 <wire x1="22.86" y1="10.16" x2="22.86" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="22.86" y1="10.16" x2="25.4" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GND"/>
-<pinref part="U1" gate="G$1" pin="AGND"/>
 <wire x1="25.4" y1="12.7" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="12.7" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
 <junction x="22.86" y="10.16"/>
+<pinref part="U1" gate="G$1" pin="AGND"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -26618,9 +26698,9 @@ to disconnect from IO22</text>
 </segment>
 <segment>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
+<wire x1="25.4" y1="73.66" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="73.66" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="3V3"/>
-<wire x1="25.4" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="68.58" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
@@ -26690,9 +26770,9 @@ to disconnect from IO22</text>
 <junction x="63.5" y="190.5"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="RUN"/>
 <wire x1="25.4" y1="55.88" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
 <label x="22.86" y="55.88" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="RUN"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -27012,16 +27092,16 @@ to disconnect from IO22</text>
 <label x="391.16" y="124.46" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO16"/>
 <wire x1="63.5" y1="33.02" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
 <label x="63.5" y="33.02" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="GPIO16"/>
 </segment>
 </net>
 <net name="RP_IO17/S2_OUT" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO17"/>
 <wire x1="63.5" y1="30.48" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
 <label x="63.5" y="30.48" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="GPIO17"/>
 </segment>
 <segment>
 <wire x1="396.24" y1="101.6" x2="391.16" y2="101.6" width="0.1524" layer="91"/>
@@ -27041,9 +27121,9 @@ to disconnect from IO22</text>
 <label x="190.5" y="124.46" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO19"/>
 <wire x1="63.5" y1="25.4" x2="60.96" y2="25.4" width="0.1524" layer="91"/>
 <label x="63.5" y="25.4" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="GPIO19"/>
 </segment>
 <segment>
 <wire x1="152.4" y1="180.34" x2="149.86" y2="180.34" width="0.1524" layer="91"/>
@@ -27068,9 +27148,9 @@ to disconnect from IO22</text>
 <label x="190.5" y="127" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO18"/>
 <wire x1="60.96" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
 <label x="63.5" y="27.94" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="GPIO18"/>
 </segment>
 <segment>
 <wire x1="114.3" y1="180.34" x2="111.76" y2="180.34" width="0.1524" layer="91"/>
@@ -27116,9 +27196,9 @@ to disconnect from IO22</text>
 </net>
 <net name="RP_IO20/RANGE_TRIG" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO20"/>
 <wire x1="63.5" y1="22.86" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
 <label x="63.5" y="22.86" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="GPIO20"/>
 </segment>
 <segment>
 <wire x1="264.16" y1="20.32" x2="259.08" y2="20.32" width="0.1524" layer="91"/>
@@ -27133,9 +27213,9 @@ to disconnect from IO22</text>
 </net>
 <net name="RP_IO21/RANGE_ECHO" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO21"/>
 <wire x1="63.5" y1="20.32" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
 <label x="63.5" y="20.32" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="GPIO21"/>
 </segment>
 <segment>
 <wire x1="264.16" y1="22.86" x2="259.08" y2="22.86" width="0.1524" layer="91"/>
@@ -27150,9 +27230,9 @@ to disconnect from IO22</text>
 </net>
 <net name="RP_IO22/USER_BTN" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO22"/>
 <wire x1="63.5" y1="17.78" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
 <label x="63.5" y="17.78" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="GPIO22"/>
 </segment>
 <segment>
 <wire x1="302.26" y1="50.8" x2="297.18" y2="50.8" width="0.1524" layer="91"/>
@@ -27172,9 +27252,9 @@ to disconnect from IO22</text>
 </net>
 <net name="RP_IO26/LINE_L" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO26/ADC0"/>
 <wire x1="63.5" y1="15.24" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
 <label x="63.5" y="15.24" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="GPIO26/ADC0"/>
 </segment>
 <segment>
 <wire x1="302.26" y1="20.32" x2="297.18" y2="20.32" width="0.1524" layer="91"/>
@@ -27189,9 +27269,9 @@ to disconnect from IO22</text>
 </net>
 <net name="RP_IO27/LINE_R" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO27/ADC1"/>
 <wire x1="63.5" y1="12.7" x2="60.96" y2="12.7" width="0.1524" layer="91"/>
 <label x="63.5" y="12.7" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="GPIO27/ADC1"/>
 </segment>
 <segment>
 <wire x1="302.26" y1="22.86" x2="297.18" y2="22.86" width="0.1524" layer="91"/>
@@ -27206,9 +27286,9 @@ to disconnect from IO22</text>
 </net>
 <net name="RP_IO28/VIN_MEAS" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO28/ADC2"/>
 <wire x1="63.5" y1="10.16" x2="60.96" y2="10.16" width="0.1524" layer="91"/>
 <label x="63.5" y="10.16" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="GPIO28/ADC2"/>
 </segment>
 <segment>
 <wire x1="302.26" y1="53.34" x2="297.18" y2="53.34" width="0.1524" layer="91"/>
@@ -27323,9 +27403,15 @@ to disconnect from IO22</text>
 <junction x="104.14" y="256.54"/>
 </segment>
 <segment>
-<pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="SUPPLY11" gate="G$1" pin="V_USB"/>
-<wire x1="7.62" y1="86.36" x2="7.62" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="99.06" x2="10.16" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="96.52" x2="5.08" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="99.06" x2="10.16" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="96.52" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="99.06" x2="10.16" y2="99.06" width="0.1524" layer="91"/>
+<junction x="10.16" y="99.06"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -27686,9 +27772,9 @@ to disconnect from IO22</text>
 </net>
 <net name="BOOTSEL" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="TP_BOOTSEL"/>
 <wire x1="25.4" y1="30.48" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
 <label x="22.86" y="30.48" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="TP_BOOTSEL"/>
 </segment>
 <segment>
 <wire x1="226.06" y1="30.48" x2="223.52" y2="30.48" width="0.1524" layer="91"/>
@@ -27698,9 +27784,9 @@ to disconnect from IO22</text>
 </net>
 <net name="V_SYS" class="0">
 <segment>
+<wire x1="25.4" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
+<label x="22.86" y="71.12" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="VSYS"/>
-<wire x1="25.4" y1="71.12" x2="12.7" y2="71.12" width="0.1524" layer="91"/>
-<label x="12.7" y="71.12" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="Q7" gate="G2" pin="E"/>
@@ -27741,16 +27827,22 @@ to disconnect from IO22</text>
 <net name="N$9" class="0">
 <segment>
 <pinref part="VUSB" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="71.12" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VBUS"/>
-<wire x1="20.32" y1="73.66" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="VUSB" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="73.66" x2="7.62" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="76.2" x2="7.62" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="81.28" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="83.82" x2="5.08" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="83.82" x2="5.08" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="86.36" x2="15.24" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
+<junction x="10.16" y="83.82"/>
 </segment>
 </net>
 </nets>
