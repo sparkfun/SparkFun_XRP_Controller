@@ -299,7 +299,7 @@
 <rectangle x1="14.478" y1="45.847" x2="18.542" y2="46.101" layer="21"/>
 <rectangle x1="51.308" y1="44.323" x2="51.435" y2="45.847" layer="21"/>
 <rectangle x1="57.785" y1="44.323" x2="57.912" y2="45.847" layer="21"/>
-<rectangle x1="51.308" y1="44.196" x2="57.912" y2="44.323" layer="21"/>
+<rectangle x1="51.308" y1="44.196" x2="55.372" y2="44.323" layer="21"/>
 <rectangle x1="10.922" y1="45.847" x2="12.192" y2="49.657" layer="21"/>
 <rectangle x1="5.588" y1="45.847" x2="6.858" y2="49.657" layer="21"/>
 <rectangle x1="6.858" y1="48.768" x2="10.922" y2="49.657" layer="21"/>
@@ -659,6 +659,8 @@
 <rectangle x1="41.783" y1="47.371" x2="42.037" y2="47.879" layer="41"/>
 <rectangle x1="39.243" y1="31.623" x2="39.624" y2="31.877" layer="41"/>
 <rectangle x1="17.653" y1="16.129" x2="17.907" y2="16.256" layer="41"/>
+<rectangle x1="56.007" y1="44.196" x2="57.912" y2="44.323" layer="21"/>
+<rectangle x1="55.372" y1="44.196" x2="56.007" y2="44.2468" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -10076,19 +10078,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 <package name="#RANGE#0">
 <polygon width="0.01" layer="21">
-<vertex x="-2.85" y="0.85"/>
+<vertex x="-2.81" y="0.85"/>
 <vertex x="-3.19" y="0.85"/>
 <vertex x="-3.23" y="0.8"/>
-<vertex x="-3.23" y="-0.81"/>
-<vertex x="-3.18" y="-0.85"/>
-<vertex x="3.17" y="-0.85"/>
-<vertex x="3.23" y="-0.82"/>
+<vertex x="-3.23" y="-0.937"/>
+<vertex x="-3.18" y="-0.977"/>
+<vertex x="3.17" y="-0.977"/>
+<vertex x="3.23" y="-0.947"/>
 <vertex x="3.23" y="0.79"/>
 <vertex x="3.21" y="0.85"/>
 <vertex x="-2.81" y="0.85"/>
 <vertex x="-2.72" y="0.58"/>
 <vertex x="-2.65" y="0.61"/>
-<vertex x="-2.55" y="0.61"/>
 <vertex x="-2.22" y="0.61"/>
 <vertex x="-2.14" y="0.59"/>
 <vertex x="-2.06" y="0.56"/>
@@ -10138,7 +10139,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="0.92" y="0.25"/>
 <vertex x="1" y="0.27"/>
 <vertex x="1.08" y="0.27"/>
-<vertex x="1.16" y="0.23"/>
 <vertex x="1.22" y="0.2"/>
 <vertex x="1.26" y="0.26"/>
 <vertex x="1.35" y="0.28"/>
@@ -10158,12 +10158,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="2.5" y="0.19"/>
 <vertex x="2.55" y="0.12"/>
 <vertex x="2.58" y="0.04"/>
-<vertex x="2.59" y="-0.04"/>
 <vertex x="2.6" y="-0.12"/>
 <vertex x="2.6" y="-0.14"/>
 <vertex x="2.53" y="-0.2"/>
 <vertex x="2.46" y="-0.24"/>
-<vertex x="2.37" y="-0.24"/>
 <vertex x="2.12" y="-0.24"/>
 <vertex x="2.06" y="-0.26"/>
 <vertex x="2.11" y="-0.32"/>
@@ -10179,7 +10177,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="2.36" y="-0.58"/>
 <vertex x="2.24" y="-0.59"/>
 <vertex x="2.14" y="-0.59"/>
-<vertex x="2.06" y="-0.57"/>
 <vertex x="1.98" y="-0.55"/>
 <vertex x="1.9" y="-0.5"/>
 <vertex x="1.85" y="-0.45"/>
@@ -10199,7 +10196,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="1.21" y="-0.94"/>
 <vertex x="1.12" y="-0.95"/>
 <vertex x="1.04" y="-0.96"/>
-<vertex x="0.96" y="-0.94"/>
 <vertex x="0.88" y="-0.92"/>
 <vertex x="0.79" y="-0.87"/>
 <vertex x="0.73" y="-0.81"/>
@@ -10223,14 +10219,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="0.66" y="-0.23"/>
 <vertex x="0.65" y="-0.15"/>
 <vertex x="0.42" y="-0.12"/>
-<vertex x="0.42" y="-0.2"/>
 <vertex x="0.42" y="-0.46"/>
 <vertex x="0.41" y="-0.54"/>
 <vertex x="0.35" y="-0.58"/>
 <vertex x="0.25" y="-0.59"/>
 <vertex x="0.16" y="-0.57"/>
 <vertex x="0.13" y="-0.51"/>
-<vertex x="0.13" y="-0.42"/>
 <vertex x="0.13" y="-0.16"/>
 <vertex x="0.11" y="-0.08"/>
 <vertex x="0.05" y="-0.03"/>
@@ -10268,7 +10262,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-1.86" y="-0.02"/>
 <vertex x="-1.91" y="-0.09"/>
 <vertex x="-1.93" y="-0.15"/>
-<vertex x="-1.87" y="-0.3"/>
 <vertex x="-1.81" y="-0.45"/>
 <vertex x="-1.83" y="-0.51"/>
 <vertex x="-1.91" y="-0.57"/>
@@ -10288,7 +10281,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-2.74" y="-0.43"/>
 <vertex x="-2.74" y="0.5"/>
 <vertex x="-2.72" y="0.57"/>
-<vertex x="-2.81" y="0.85"/>
 </polygon>
 <polygon width="0.01" layer="21">
 <vertex x="-2.44" y="0.03"/>
@@ -19915,7 +19907,6 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <attribute name="PROD_ID" value="TRANS-14386" x="12.065" y="6.985" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" x="17.315" y="19.525" size="1.27" layer="27"/>
 </element>
-<element name="U$73" library="output" package="#RANGE#0" value="" x="54.61" y="45.085" smashed="yes"/>
 <element name="U$74" library="output" package="#LINE#0" value="" x="8.89" y="45.085" smashed="yes"/>
 <element name="U$10" library="output" package="#MOTOR_L#0" value="" x="8.255" y="38.1" smashed="yes" rot="R90"/>
 <element name="U$1" library="output" package="#MOTOR_3#0" value="" x="8.255" y="27.94" smashed="yes" rot="R90"/>
@@ -20044,6 +20035,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <element name="U$68" library="output" package="IO220" value="" x="3.81" y="48.895" smashed="yes"/>
 <element name="TP39" library="SparkFun-Connectors" package="PAD.03X.05" value="TEST-POINT3X5" x="50.8" y="22.86" smashed="yes" rot="MR0"/>
 <element name="TP38" library="SparkFun-Connectors" package="PAD.03X.05" value="TEST-POINT3X5" x="45.085" y="19.685" smashed="yes" rot="MR0"/>
+<element name="U$69" library="output" package="#RANGE#0" value="" x="54.61" y="45.212" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
