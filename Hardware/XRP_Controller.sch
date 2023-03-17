@@ -25609,9 +25609,9 @@ Switches electrical signals</description>
 <part name="TP31" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
 <part name="TP32" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
 <part name="TP33" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
-<part name="TP34" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
 <part name="TP35" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
 <part name="TP36" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP37" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
 <part name="SUPPLY28" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND39" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
@@ -25620,7 +25620,7 @@ Switches electrical signals</description>
 <part name="GND30" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="VIN_MEAS" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="R15" library="SparkFun-Resistors" deviceset="33KOHM" device="-0603-1/10W-1%" value="33k"/>
-<part name="TP37" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP34" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
 <part name="SUPPLY36" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
 <part name="USER" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-4.6X2.8MM"/>
 <part name="GND42" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -25632,6 +25632,8 @@ Switches electrical signals</description>
 <part name="R19" library="SparkFun-Resistors" deviceset="10OHM" device="-1206-1/4W-1%" value="10"/>
 <part name="R18" library="SparkFun-Resistors" deviceset="10OHM" device="-1206-1/4W-1%" value="10"/>
 <part name="U1" library="RPI_PICO_W" deviceset="RPI_PICO_W" device=""/>
+<part name="TP39" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP38" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
 </parts>
 <sheets>
 <sheet>
@@ -25858,15 +25860,15 @@ to disconnect from IO22</text>
 <instance part="SUPPLY27" gate="G$1" x="25.4" y="256.54" smashed="yes">
 <attribute name="VALUE" x="25.4" y="259.334" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="C4" gate="G$1" x="137.16" y="119.38" smashed="yes">
-<attribute name="NAME" x="138.684" y="122.301" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="138.684" y="117.221" size="1.778" layer="96" font="vector"/>
+<instance part="C4" gate="G$1" x="127" y="119.38" smashed="yes">
+<attribute name="NAME" x="128.524" y="122.301" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="128.524" y="117.221" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="GND11" gate="1" x="137.16" y="111.76" smashed="yes">
-<attribute name="VALUE" x="137.16" y="111.506" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND11" gate="1" x="127" y="111.76" smashed="yes">
+<attribute name="VALUE" x="127" y="111.506" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY7" gate="G$1" x="137.16" y="127" smashed="yes">
-<attribute name="VALUE" x="137.16" y="129.794" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY7" gate="G$1" x="127" y="127" smashed="yes">
+<attribute name="VALUE" x="127" y="129.794" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="J12" gate="G$1" x="271.78" y="17.78" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="279.146" y="5.08" size="1.778" layer="96" font="vector" rot="MR90" align="top-left"/>
@@ -25941,18 +25943,18 @@ to disconnect from IO22</text>
 <instance part="SUPPLY10" gate="G$1" x="299.72" y="25.4" smashed="yes">
 <attribute name="VALUE" x="299.72" y="28.194" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY11" gate="G$1" x="10.16" y="101.6" smashed="yes">
-<attribute name="VALUE" x="10.16" y="104.394" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY11" gate="G$1" x="10.16" y="91.44" smashed="yes">
+<attribute name="VALUE" x="10.16" y="94.234" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="C6" gate="G$1" x="127" y="119.38" smashed="yes">
-<attribute name="NAME" x="128.524" y="122.301" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="128.524" y="117.221" size="1.778" layer="96" font="vector"/>
+<instance part="C6" gate="G$1" x="116.84" y="119.38" smashed="yes">
+<attribute name="NAME" x="118.364" y="122.301" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="118.364" y="117.221" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="GND9" gate="1" x="127" y="111.76" smashed="yes">
-<attribute name="VALUE" x="127" y="111.506" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND9" gate="1" x="116.84" y="111.76" smashed="yes">
+<attribute name="VALUE" x="116.84" y="111.506" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY12" gate="G$1" x="127" y="127" smashed="yes">
-<attribute name="VALUE" x="127" y="129.794" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY12" gate="G$1" x="116.84" y="127" smashed="yes">
+<attribute name="VALUE" x="116.84" y="129.794" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="IMU_ADR" gate="G$1" x="187.96" y="109.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="185.166" y="109.22" size="1.778" layer="95" font="vector" rot="R90" align="center"/>
@@ -26130,8 +26132,8 @@ to disconnect from IO22</text>
 <instance part="SUPPLY5" gate="G$1" x="246.38" y="264.16" smashed="yes">
 <attribute name="VALUE" x="246.38" y="266.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="VUSB" gate="G$1" x="10.16" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.954" y="76.2" size="1.778" layer="95" font="vector" rot="R270" align="center"/>
+<instance part="VUSB" gate="G$1" x="17.78" y="68.58" smashed="yes">
+<attribute name="NAME" x="17.78" y="65.786" size="1.778" layer="95" font="vector" rot="R180" align="center"/>
 </instance>
 <instance part="SUPPLY24" gate="G$1" x="93.98" y="259.08" smashed="yes">
 <attribute name="VALUE" x="93.98" y="261.874" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -26294,13 +26296,13 @@ to disconnect from IO22</text>
 <instance part="TP33" gate="G$1" x="226.06" y="60.96" smashed="yes">
 <attribute name="NAME" x="226.06" y="58.42" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="TP34" gate="G$1" x="226.06" y="45.72" smashed="yes">
+<instance part="TP35" gate="G$1" x="226.06" y="45.72" smashed="yes">
 <attribute name="NAME" x="226.06" y="43.18" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="TP35" gate="G$1" x="226.06" y="38.1" smashed="yes">
+<instance part="TP36" gate="G$1" x="226.06" y="38.1" smashed="yes">
 <attribute name="NAME" x="226.06" y="35.56" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="TP36" gate="G$1" x="226.06" y="30.48" smashed="yes">
+<instance part="TP37" gate="G$1" x="226.06" y="30.48" smashed="yes">
 <attribute name="NAME" x="226.06" y="27.94" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="SUPPLY28" gate="G$1" x="223.52" y="63.5" smashed="yes">
@@ -26329,7 +26331,7 @@ to disconnect from IO22</text>
 <attribute name="NAME" x="188.976" y="172.72" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="192.024" y="172.72" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="TP37" gate="G$1" x="226.06" y="53.34" smashed="yes">
+<instance part="TP34" gate="G$1" x="226.06" y="53.34" smashed="yes">
 <attribute name="NAME" x="226.06" y="50.8" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="SUPPLY36" gate="G$1" x="215.9" y="63.5" smashed="yes">
@@ -26358,17 +26360,23 @@ to disconnect from IO22</text>
 <instance part="USER_BTN" gate="G$1" x="33.02" y="144.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.02" y="147.828" size="1.778" layer="95" font="vector" align="center"/>
 </instance>
-<instance part="R19" gate="G$1" x="15.24" y="91.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="13.716" y="91.44" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="16.764" y="91.44" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R19" gate="G$1" x="15.24" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.716" y="81.28" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="16.764" y="81.28" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="R18" gate="G$1" x="5.08" y="91.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="3.556" y="91.44" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="6.604" y="91.44" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R18" gate="G$1" x="5.08" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.556" y="81.28" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="6.604" y="81.28" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="U1" gate="G$1" x="43.18" y="43.18" smashed="yes">
 <attribute name="NAME" x="27.94" y="76.454" size="1.778" layer="95"/>
 <attribute name="VALUE" x="27.94" y="5.08" size="1.778" layer="96"/>
+</instance>
+<instance part="TP39" gate="G$1" x="226.06" y="15.24" smashed="yes">
+<attribute name="NAME" x="226.06" y="12.7" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP38" gate="G$1" x="226.06" y="22.86" smashed="yes">
+<attribute name="NAME" x="226.06" y="20.32" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -26456,7 +26464,7 @@ to disconnect from IO22</text>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="137.16" y1="114.3" x2="137.16" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="127" y1="114.3" x2="127" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -26509,7 +26517,7 @@ to disconnect from IO22</text>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="127" y1="114.3" x2="127" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="114.3" x2="116.84" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -26693,7 +26701,7 @@ to disconnect from IO22</text>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
-<wire x1="137.16" y1="127" x2="137.16" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="127" y1="127" x2="127" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -26732,7 +26740,7 @@ to disconnect from IO22</text>
 </segment>
 <segment>
 <pinref part="SUPPLY12" gate="G$1" pin="3.3V"/>
-<wire x1="127" y1="127" x2="127" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="127" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -26807,7 +26815,7 @@ to disconnect from IO22</text>
 <junction x="58.42" y="256.54"/>
 </segment>
 <segment>
-<pinref part="TP37" gate="G$1" pin="1"/>
+<pinref part="TP34" gate="G$1" pin="1"/>
 <pinref part="SUPPLY36" gate="G$1" pin="V_BATT"/>
 <wire x1="226.06" y1="53.34" x2="215.9" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="53.34" x2="215.9" y2="63.5" width="0.1524" layer="91"/>
@@ -27404,14 +27412,14 @@ to disconnect from IO22</text>
 </segment>
 <segment>
 <pinref part="SUPPLY11" gate="G$1" pin="V_USB"/>
-<wire x1="10.16" y1="99.06" x2="10.16" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="88.9" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="96.52" x2="5.08" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="99.06" x2="10.16" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="86.36" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="88.9" x2="10.16" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="96.52" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="99.06" x2="10.16" y2="99.06" width="0.1524" layer="91"/>
-<junction x="10.16" y="99.06"/>
+<wire x1="15.24" y1="86.36" x2="15.24" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="88.9" x2="10.16" y2="88.9" width="0.1524" layer="91"/>
+<junction x="10.16" y="88.9"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -27755,7 +27763,7 @@ to disconnect from IO22</text>
 <segment>
 <wire x1="226.06" y1="38.1" x2="223.52" y2="38.1" width="0.1524" layer="91"/>
 <label x="223.52" y="38.1" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="TP35" gate="G$1" pin="1"/>
+<pinref part="TP36" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="5V_EN" class="0">
@@ -27767,7 +27775,7 @@ to disconnect from IO22</text>
 <segment>
 <wire x1="226.06" y1="45.72" x2="223.52" y2="45.72" width="0.1524" layer="91"/>
 <label x="223.52" y="45.72" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="TP34" gate="G$1" pin="1"/>
+<pinref part="TP35" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="BOOTSEL" class="0">
@@ -27779,7 +27787,7 @@ to disconnect from IO22</text>
 <segment>
 <wire x1="226.06" y1="30.48" x2="223.52" y2="30.48" width="0.1524" layer="91"/>
 <label x="223.52" y="30.48" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="TP36" gate="G$1" pin="1"/>
+<pinref part="TP37" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="V_SYS" class="0">
@@ -27826,23 +27834,47 @@ to disconnect from IO22</text>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="VUSB" gate="G$1" pin="1"/>
-<wire x1="10.16" y1="71.12" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VBUS"/>
+<pinref part="VUSB" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="VUSB" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="81.28" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="83.82" x2="5.08" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="83.82" x2="5.08" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="73.66" x2="5.08" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="86.36" x2="15.24" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
-<junction x="10.16" y="83.82"/>
+<wire x1="15.24" y1="76.2" x2="15.24" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="VUSB" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="73.66" x2="5.08" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="68.58" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
+<junction x="10.16" y="73.66"/>
+</segment>
+</net>
+<net name="IMU_INT2" class="0">
+<segment>
+<pinref part="TP39" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="15.24" x2="223.52" y2="15.24" width="0.1524" layer="91"/>
+<label x="223.52" y="15.24" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="INT2"/>
+<wire x1="149.86" y1="119.38" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
+<label x="147.32" y="119.38" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="IMU_INT1" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="INT1"/>
+<wire x1="149.86" y1="121.92" x2="147.32" y2="121.92" width="0.1524" layer="91"/>
+<label x="147.32" y="121.92" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TP38" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="22.86" x2="223.52" y2="22.86" width="0.1524" layer="91"/>
+<label x="223.52" y="22.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
