@@ -26528,8 +26528,12 @@ to disconnect from IO22</text>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
 <pinref part="U4" gate="G$1" pin="SDIX"/>
-<wire x1="177.8" y1="106.68" x2="177.8" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="106.68" x2="177.8" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="114.3" x2="177.8" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="116.84" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="SCX"/>
+<wire x1="175.26" y1="114.3" x2="177.8" y2="114.3" width="0.1524" layer="91"/>
+<junction x="177.8" y="114.3"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>

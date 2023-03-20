@@ -20265,7 +20265,8 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <via x="59.69" y="34.29" extent="1-16" drill="0.3048"/>
 <via x="7.239" y="26.289" extent="1-16" drill="0.3048"/>
 <wire x1="45.815" y1="23.11" x2="45.3106625" y2="23.11" width="0.254" layer="1"/>
-<wire x1="45.085" y1="22.8843375" x2="45.085" y2="22.225" width="0.254" layer="1"/>
+<wire x1="45.085" y1="22.8843375" x2="45.085" y2="22.606" width="0.254" layer="1"/>
+<wire x1="45.085" y1="22.606" x2="45.085" y2="22.225" width="0.254" layer="1"/>
 <wire x1="45.3106625" y1="23.11" x2="45.085" y2="22.8843375" width="0.254" layer="1"/>
 <contactref element="J8" pad="3"/>
 <via x="15.875" y="12.7" extent="1-16" drill="0.3048"/>
@@ -20326,6 +20327,9 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <contactref element="U1" pad="8"/>
 <contactref element="U1" pad="28"/>
 <via x="50.8" y="21.336" extent="1-16" drill="0.3048"/>
+<contactref element="U4" pad="3"/>
+<wire x1="45.815" y1="22.61" x2="45.089" y2="22.61" width="0.254" layer="1"/>
+<wire x1="45.089" y1="22.61" x2="45.085" y2="22.606" width="0.254" layer="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="D1" pad="A"/>
