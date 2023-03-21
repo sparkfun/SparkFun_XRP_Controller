@@ -20256,8 +20256,8 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <via x="43.815" y="27.559" extent="1-16" drill="0.3048"/>
 <via x="38.735" y="8.89" extent="1-16" drill="0.3048"/>
 <via x="59.69" y="12.7" extent="1-16" drill="0.3048"/>
-<via x="14.605" y="46.355" extent="1-16" drill="0.3048"/>
-<via x="8.255" y="48.26" extent="1-16" drill="0.3048"/>
+<via x="13.97" y="46.355" extent="1-16" drill="0.3048"/>
+<via x="6.35" y="47.625" extent="1-16" drill="0.3048"/>
 <contactref element="R15" pad="1"/>
 <via x="13.335" y="41.91" extent="1-16" drill="0.3048"/>
 <contactref element="USER" pad="1"/>
@@ -20313,6 +20313,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <contactref element="U4" pad="3"/>
 <wire x1="45.815" y1="22.61" x2="45.089" y2="22.61" width="0.254" layer="1"/>
 <wire x1="45.089" y1="22.61" x2="45.085" y2="22.606" width="0.254" layer="1"/>
+<via x="13.208" y="43.815" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="3.3V">
 <contactref element="D1" pad="A"/>
@@ -20885,16 +20886,16 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <wire x1="19.939" y1="31.115" x2="19.558" y2="31.496" width="0.254" layer="1"/>
 <wire x1="19.558" y1="31.496" x2="19.558" y2="43.942" width="0.254" layer="1"/>
 <contactref element="J13" pad="3"/>
-<wire x1="19.558" y1="43.942" x2="19.05" y2="44.45" width="0.254" layer="1"/>
+<wire x1="19.558" y1="43.942" x2="19.431" y2="44.069" width="0.254" layer="1"/>
 <contactref element="TP21" pad="1"/>
-<via x="19.05" y="44.45" extent="1-16" drill="0.3048"/>
-<wire x1="19.05" y1="44.45" x2="17.145" y2="44.45" width="0.254" layer="16"/>
-<wire x1="17.145" y1="44.45" x2="15.875" y2="45.72" width="0.254" layer="16"/>
+<via x="19.431" y="44.069" extent="1-16" drill="0.3048"/>
+<wire x1="19.431" y1="44.069" x2="17.526" y2="44.069" width="0.254" layer="16"/>
+<wire x1="17.526" y1="44.069" x2="15.875" y2="45.72" width="0.254" layer="16"/>
 <contactref element="USER_BTN" pad="2"/>
 <wire x1="15.7607" y1="43.18" x2="15.7607" y2="45.6057" width="0.254" layer="16"/>
 <wire x1="15.7607" y1="45.6057" x2="15.875" y2="45.72" width="0.254" layer="16"/>
 <wire x1="17.01" y1="49.67" x2="17.01" y2="46.49" width="0.254" layer="1"/>
-<wire x1="17.01" y1="46.49" x2="19.05" y2="44.45" width="0.254" layer="1"/>
+<wire x1="17.01" y1="46.49" x2="19.431" y2="44.069" width="0.254" layer="1"/>
 <contactref element="U1" pad="29"/>
 </signal>
 <signal name="RP_IO26/LINE_L">
@@ -21573,12 +21574,13 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <wire x1="4.61" y1="47.77" x2="4.61" y2="43.67" width="0.254" layer="1"/>
 <wire x1="4.61" y1="43.67" x2="5.1" y2="43.18" width="0.254" layer="1"/>
 <wire x1="5.1" y1="43.18" x2="6.77" y2="43.18" width="0.254" layer="1"/>
-<wire x1="10.16" y1="42.76" x2="10.16" y2="43.815" width="0.254" layer="1"/>
-<wire x1="10.16" y1="43.815" x2="9.525" y2="44.45" width="0.254" layer="1"/>
-<wire x1="9.525" y1="44.45" x2="8.04" y2="44.45" width="0.254" layer="1"/>
+<wire x1="10.16" y1="42.76" x2="9.525" y2="43.395" width="0.254" layer="1"/>
+<wire x1="9.525" y1="43.815" x2="9.525" y2="43.395" width="0.254" layer="1"/>
+<wire x1="9.525" y1="43.815" x2="8.89" y2="44.45" width="0.254" layer="1"/>
+<wire x1="8.89" y1="44.45" x2="8.04" y2="44.45" width="0.254" layer="1"/>
 <wire x1="8.04" y1="44.45" x2="6.77" y2="43.18" width="0.254" layer="1"/>
-<via x="10.16" y="43.815" extent="1-16" drill="0.3048"/>
-<wire x1="10.16" y1="43.815" x2="12.065" y2="43.815" width="0.254" layer="16"/>
+<via x="9.525" y="43.815" extent="1-16" drill="0.3048"/>
+<wire x1="9.525" y1="43.815" x2="12.065" y2="43.815" width="0.254" layer="16"/>
 <wire x1="12.065" y1="43.815" x2="12.7" y2="43.18" width="0.254" layer="16"/>
 <wire x1="12.7" y1="43.18" x2="14.7193" y2="43.18" width="0.254" layer="16"/>
 </signal>
@@ -21643,7 +21645,6 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <approved hash="5,1,d950a82fabd2e60d"/>
 <approved hash="5,1,d0870d25aef67b2b"/>
 <approved hash="5,1,e7a22d19d5e020fa"/>
-<approved hash="19,16,2269d500e3443f20"/>
 <approved hash="4,1,835d77cabdf64821"/>
 <approved hash="4,1,82c55f9888445421"/>
 <approved hash="4,1,a2c73d98f1a76fb8"/>
@@ -21674,7 +21675,6 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <approved hash="19,1,2db5a6a3b60fe1e7"/>
 <approved hash="19,1,fa8381423aa03f64"/>
 <approved hash="19,16,8e10a6dffd823320"/>
-<approved hash="19,16,53a38a0ccd48cde6"/>
 <approved hash="19,16,56f123515498bafe"/>
 <approved hash="19,16,4af84bfc73c472c0"/>
 <approved hash="19,16,710570fd42c5433d"/>
@@ -21683,7 +21683,9 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <approved hash="19,1,5018572f50e15050"/>
 <approved hash="19,16,a689b18bd1315905"/>
 <approved hash="19,16,99d5a697fe0c276d"/>
-<approved hash="19,16,c711a110f8765782"/>
+<approved hash="19,16,0fb19974cd2970e1"/>
+<approved hash="19,16,a677f078c1254e2b"/>
+<approved hash="19,16,f51a8160ca7d77f2"/>
 </errors>
 </board>
 </drawing>
