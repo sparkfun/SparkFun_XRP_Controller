@@ -26101,7 +26101,7 @@ digital gyroscope.&lt;/p&gt;</description>
 <sheet>
 <plain>
 <text x="358.14" y="12.7" size="2.54" layer="94" font="vector" align="center">Dryw Wade</text>
-<text x="426.72" y="7.62" size="2.54" layer="94" font="vector" align="center">v10</text>
+<text x="426.72" y="7.62" size="2.54" layer="94" font="vector" align="center">v09</text>
 <text x="396.24" y="274.32" size="2.54" layer="94" font="vector" align="center">Motor Connectors</text>
 <text x="393.7" y="137.16" size="2.54" layer="94" font="vector" align="center">Servo Connectors</text>
 <text x="284.48" y="68.58" size="2.54" layer="94" font="vector" align="center">Expansion Connectors</text>
