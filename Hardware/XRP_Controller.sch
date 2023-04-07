@@ -22507,6 +22507,21 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 </technology>
 </technologies>
 </device>
+<device name="-0402_TIGHT_50V-5%-C0G/NP0" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PN" value="CBR04C470J5GAC"/>
+<attribute name="PROD_ID" value="CAP-16699"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VALUE" value="47pF"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="22UF" prefix="C">
@@ -24528,6 +24543,31 @@ Philips Semiconductors, SOT363.pdf</description>
 <rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
 <circle x="-1.1064" y="-1.012" radius="0.15" width="0" layer="21"/>
 </package>
+<package name="SOT523">
+<smd name="1" x="0" y="0.7" dx="0.4" dy="0.51" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="0.5" y="-0.6" dx="0.4" dy="0.51" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="3" x="-0.5" y="-0.6" dx="0.4" dy="0.51" layer="1" stop="no" thermals="no" cream="no"/>
+<rectangle x1="-0.25" y1="0.4" x2="0.25" y2="1.01" layer="29"/>
+<rectangle x1="0.25" y1="-0.9" x2="0.75" y2="-0.29" layer="29"/>
+<rectangle x1="-0.75" y1="-0.9" x2="-0.25" y2="-0.29" layer="29"/>
+<rectangle x1="-0.15" y1="0.5" x2="0.15" y2="0.9" layer="31"/>
+<rectangle x1="-0.65" y1="-0.8" x2="-0.35" y2="-0.4" layer="31"/>
+<rectangle x1="0.35" y1="-0.8" x2="0.65" y2="-0.4" layer="31"/>
+<wire x1="-0.8" y1="0.45" x2="-0.8" y2="-0.35" width="0.05" layer="51"/>
+<wire x1="-0.8" y1="-0.35" x2="0.8" y2="-0.35" width="0.05" layer="51"/>
+<wire x1="0.8" y1="-0.35" x2="0.8" y2="0.45" width="0.05" layer="51"/>
+<wire x1="0.8" y1="0.45" x2="-0.8" y2="0.45" width="0.05" layer="51"/>
+<wire x1="-0.5" y1="0.6" x2="-0.95" y2="0.6" width="0.2" layer="21"/>
+<wire x1="-0.95" y1="0.6" x2="-0.95" y2="-0.3" width="0.2" layer="21"/>
+<wire x1="0.5" y1="0.6" x2="0.95" y2="0.6" width="0.2" layer="21"/>
+<wire x1="0.95" y1="0.6" x2="0.95" y2="-0.3" width="0.2" layer="21"/>
+<text x="-0.9" y="-0.8" size="0.2" layer="51" font="vector">G</text>
+<text x="0.8" y="-0.8" size="0.2" layer="51" font="vector">S</text>
+<text x="0.4" y="0.8" size="0.2" layer="51" font="vector">D</text>
+<text x="-1" y="1.2" size="0.6" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1" y="-1.7" size="0.6" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<rectangle x1="-0.9" y1="-0.9" x2="1" y2="1" layer="39"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOT363_PHILIPS" urn="urn:adsk.eagle:package:29757/2" type="model">
@@ -24727,6 +24767,21 @@ Switches electrical signals</description>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-15421"/>
 <attribute name="VALUE" value="100mA/20V/3.8Ω"/>
+</technology>
+</technologies>
+</device>
+<device name="-DMP21D0UT" package="SOT523">
+<connects>
+<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="I_D" value="590Ma"/>
+<attribute name="PROD_ID" value="TRANS-16700"/>
+<attribute name="VALUE" value="DMP21D0UT-7" constant="no"/>
+<attribute name="V_DSS" value="-20v"/>
 </technology>
 </technologies>
 </device>
@@ -26101,7 +26156,7 @@ digital gyroscope.&lt;/p&gt;</description>
 <sheet>
 <plain>
 <text x="358.14" y="12.7" size="2.54" layer="94" font="vector" align="center">Dryw Wade</text>
-<text x="426.72" y="7.62" size="2.54" layer="94" font="vector" align="center">v09</text>
+<text x="426.72" y="7.62" size="2.54" layer="94" font="vector" align="center">v10</text>
 <text x="396.24" y="274.32" size="2.54" layer="94" font="vector" align="center">Motor Connectors</text>
 <text x="393.7" y="137.16" size="2.54" layer="94" font="vector" align="center">Servo Connectors</text>
 <text x="284.48" y="68.58" size="2.54" layer="94" font="vector" align="center">Expansion Connectors</text>
@@ -26335,13 +26390,13 @@ to disconnect from IO22</text>
 <attribute name="VALUE" x="279.146" y="5.08" size="1.778" layer="96" font="vector" rot="MR90" align="top-left"/>
 <attribute name="NAME" x="276.86" y="25.654" size="1.778" layer="95" font="vector" rot="MR0"/>
 </instance>
-<instance part="J13" gate="G$1" x="309.88" y="48.26" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="317.246" y="35.56" size="1.778" layer="96" font="vector" rot="MR90" align="top-left"/>
-<attribute name="NAME" x="314.96" y="56.134" size="1.778" layer="95" font="vector" rot="MR0"/>
+<instance part="J13" gate="G$1" x="314.96" y="48.26" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="322.326" y="35.56" size="1.778" layer="96" font="vector" rot="MR90" align="top-left"/>
+<attribute name="NAME" x="320.04" y="56.134" size="1.778" layer="95" font="vector" rot="MR0"/>
 </instance>
-<instance part="J14" gate="G$1" x="309.88" y="17.78" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="317.246" y="5.08" size="1.778" layer="96" font="vector" rot="MR90" align="top-left"/>
-<attribute name="NAME" x="314.96" y="25.654" size="1.778" layer="95" font="vector" rot="MR0"/>
+<instance part="J14" gate="G$1" x="314.96" y="17.78" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="322.326" y="5.08" size="1.778" layer="96" font="vector" rot="MR90" align="top-left"/>
+<attribute name="NAME" x="320.04" y="25.654" size="1.778" layer="95" font="vector" rot="MR0"/>
 </instance>
 <instance part="GND1" gate="1" x="22.86" y="5.08" smashed="yes">
 <attribute name="VALUE" x="22.86" y="4.826" size="1.778" layer="96" font="vector" align="top-center"/>
@@ -26392,17 +26447,17 @@ to disconnect from IO22</text>
 <instance part="SUPPLY8" gate="G$1" x="261.62" y="25.4" smashed="yes">
 <attribute name="VALUE" x="261.62" y="28.194" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND7" gate="1" x="299.72" y="40.64" smashed="yes">
-<attribute name="VALUE" x="299.72" y="40.386" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND7" gate="1" x="304.8" y="40.64" smashed="yes">
+<attribute name="VALUE" x="304.8" y="40.386" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY9" gate="G$1" x="299.72" y="55.88" smashed="yes">
-<attribute name="VALUE" x="299.72" y="58.674" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY9" gate="G$1" x="304.8" y="55.88" smashed="yes">
+<attribute name="VALUE" x="304.8" y="58.674" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND8" gate="1" x="299.72" y="10.16" smashed="yes">
-<attribute name="VALUE" x="299.72" y="9.906" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND8" gate="1" x="304.8" y="10.16" smashed="yes">
+<attribute name="VALUE" x="304.8" y="9.906" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY10" gate="G$1" x="299.72" y="25.4" smashed="yes">
-<attribute name="VALUE" x="299.72" y="28.194" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY10" gate="G$1" x="304.8" y="25.4" smashed="yes">
+<attribute name="VALUE" x="304.8" y="28.194" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY11" gate="G$1" x="10.16" y="91.44" smashed="yes">
 <attribute name="VALUE" x="10.16" y="94.234" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -26983,14 +27038,14 @@ to disconnect from IO22</text>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="299.72" y1="45.72" x2="299.72" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="45.72" x2="302.26" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="45.72" x2="304.8" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="45.72" x2="307.34" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="J13" gate="G$1" pin="1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="299.72" y1="15.24" x2="299.72" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="15.24" x2="302.26" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="15.24" x2="304.8" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="15.24" x2="307.34" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="J14" gate="G$1" pin="1"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
@@ -27215,14 +27270,14 @@ to disconnect from IO22</text>
 <pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<wire x1="299.72" y1="48.26" x2="299.72" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="48.26" x2="299.72" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="48.26" x2="304.8" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="48.26" x2="304.8" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="J13" gate="G$1" pin="2"/>
 <pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<wire x1="299.72" y1="17.78" x2="299.72" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="17.78" x2="299.72" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="17.78" x2="304.8" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="17.78" x2="304.8" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="J14" gate="G$1" pin="2"/>
 <pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
 </segment>
@@ -27731,8 +27786,8 @@ to disconnect from IO22</text>
 <pinref part="U1" gate="G$1" pin="GPIO22"/>
 </segment>
 <segment>
-<wire x1="302.26" y1="50.8" x2="297.18" y2="50.8" width="0.1524" layer="91"/>
-<label x="297.18" y="50.8" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="307.34" y1="50.8" x2="302.26" y2="50.8" width="0.1524" layer="91"/>
+<label x="302.26" y="50.8" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="J13" gate="G$1" pin="3"/>
 </segment>
 <segment>
@@ -27753,8 +27808,8 @@ to disconnect from IO22</text>
 <pinref part="U1" gate="G$1" pin="GPIO26/ADC0"/>
 </segment>
 <segment>
-<wire x1="302.26" y1="20.32" x2="297.18" y2="20.32" width="0.1524" layer="91"/>
-<label x="297.18" y="20.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="307.34" y1="20.32" x2="302.26" y2="20.32" width="0.1524" layer="91"/>
+<label x="302.26" y="20.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="3"/>
 </segment>
 <segment>
@@ -27770,8 +27825,8 @@ to disconnect from IO22</text>
 <pinref part="U1" gate="G$1" pin="GPIO27/ADC1"/>
 </segment>
 <segment>
-<wire x1="302.26" y1="22.86" x2="297.18" y2="22.86" width="0.1524" layer="91"/>
-<label x="297.18" y="22.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="307.34" y1="22.86" x2="302.26" y2="22.86" width="0.1524" layer="91"/>
+<label x="302.26" y="22.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="4"/>
 </segment>
 <segment>
@@ -27787,8 +27842,8 @@ to disconnect from IO22</text>
 <pinref part="U1" gate="G$1" pin="GPIO28/ADC2"/>
 </segment>
 <segment>
-<wire x1="302.26" y1="53.34" x2="297.18" y2="53.34" width="0.1524" layer="91"/>
-<label x="297.18" y="53.34" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="307.34" y1="53.34" x2="302.26" y2="53.34" width="0.1524" layer="91"/>
+<label x="302.26" y="53.34" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="J13" gate="G$1" pin="4"/>
 </segment>
 <segment>
