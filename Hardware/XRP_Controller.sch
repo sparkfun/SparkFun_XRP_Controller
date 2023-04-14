@@ -24209,44 +24209,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="Buck5V">
 <packages>
-<package name="V-DFN3020-13">
-<smd name="P$1" x="-0.675" y="-0.75" dx="1.5" dy="0.8" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="P$8" x="-0.675" y="0.75" dx="1.5" dy="0.8" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="P$9" x="-0.79" y="0" dx="1.73" dy="0.4" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="P$2" x="0.375" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="P$3" x="0.825" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="P$4" x="1.275" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="P$5" x="1.275" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="P$6" x="0.825" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="P$7" x="0.375" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<wire x1="-1.5" y1="1.05" x2="-1.5" y2="-1.05" width="0.1" layer="51"/>
-<wire x1="-1.5" y1="-1.05" x2="1.5" y2="-1.05" width="0.1" layer="51"/>
-<wire x1="1.5" y1="-1.05" x2="1.5" y2="1.05" width="0.1" layer="51"/>
-<wire x1="1.5" y1="1.05" x2="-1.5" y2="1.05" width="0.1" layer="51"/>
-<wire x1="-1" y1="1.4" x2="-1.8" y2="1.4" width="0.3" layer="21"/>
-<wire x1="-1.8" y1="1.4" x2="-1.8" y2="0.9" width="0.3" layer="21"/>
-<wire x1="1.8" y1="-0.9" x2="1.8" y2="-1.4" width="0.3" layer="21"/>
-<wire x1="1.8" y1="-1.4" x2="1" y2="-1.4" width="0.3" layer="21"/>
-<circle x="-1.8" y="-1.5" radius="0.254" width="0" layer="21"/>
-<rectangle x1="-1.47" y1="-1.2" x2="0.12" y2="-0.3" layer="29"/>
-<rectangle x1="0.18" y1="-1.2" x2="0.57" y2="-0.5" layer="29"/>
-<rectangle x1="0.63" y1="-1.2" x2="1.02" y2="-0.5" layer="29"/>
-<rectangle x1="1.08" y1="-1.2" x2="1.47" y2="-0.5" layer="29"/>
-<rectangle x1="0.18" y1="0.5" x2="0.57" y2="1.2" layer="29"/>
-<rectangle x1="0.63" y1="0.5" x2="1.02" y2="1.2" layer="29"/>
-<rectangle x1="1.08" y1="0.5" x2="1.47" y2="1.2" layer="29"/>
-<rectangle x1="-1.47" y1="0.3" x2="0.12" y2="1.2" layer="29"/>
-<rectangle x1="-1.7" y1="-0.25" x2="0.13" y2="0.25" layer="29"/>
-<rectangle x1="-1.48" y1="-0.15" x2="-0.18" y2="0.15" layer="31"/>
-<rectangle x1="-1.24" y1="-1.05" x2="-0.11" y2="-0.45" layer="31"/>
-<rectangle x1="-1.25" y1="0.45" x2="-0.12" y2="1.05" layer="31"/>
-<rectangle x1="0.26" y1="-1.08" x2="0.49" y2="-0.63" layer="31"/>
-<rectangle x1="0.71" y1="-1.08" x2="0.94" y2="-0.63" layer="31"/>
-<rectangle x1="1.16" y1="-1.08" x2="1.39" y2="-0.63" layer="31"/>
-<rectangle x1="1.16" y1="0.63" x2="1.39" y2="1.08" layer="31"/>
-<rectangle x1="0.71" y1="0.63" x2="0.94" y2="1.08" layer="31"/>
-<rectangle x1="0.26" y1="0.63" x2="0.49" y2="1.08" layer="31"/>
-</package>
 <package name="07A7_6U8H">
 <smd name="P$1" x="-2.775" y="0" dx="1.85" dy="3.5" layer="1"/>
 <smd name="P$2" x="2.775" y="0" dx="1.85" dy="3.5" layer="1"/>
@@ -24263,22 +24225,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <symbols>
-<symbol name="AP63357">
-<wire x1="-12.7" y1="-25.4" x2="12.7" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-25.4" x2="12.7" y2="22.86" width="0.254" layer="94"/>
-<wire x1="12.7" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="22.86" x2="-12.7" y2="-25.4" width="0.254" layer="94"/>
-<pin name="VIN" x="-15.24" y="17.78" visible="pin" length="short" direction="pwr"/>
-<pin name="EN" x="-15.24" y="2.54" visible="pin" length="short"/>
-<pin name="COMP" x="-15.24" y="-12.7" visible="pin" length="short"/>
-<pin name="GND" x="-15.24" y="-20.32" visible="pin" length="short" direction="sup"/>
-<pin name="PG" x="15.24" y="-20.32" visible="pin" length="short" direction="out" rot="R180"/>
-<pin name="FB" x="15.24" y="-12.7" visible="pin" length="short" direction="in" rot="R180"/>
-<pin name="SW" x="15.24" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="BST" x="15.24" y="17.78" visible="pin" length="short" rot="R180"/>
-<text x="-12.7" y="25.4" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-12.7" y="-30.48" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-</symbol>
 <symbol name="INDUCTOR">
 <description>&lt;h3&gt;Inductors&lt;/h3&gt;
 &lt;p&gt;Resist changes in electrical current. Basically a coil of wire.&lt;/p&gt;</description>
@@ -24293,36 +24239,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AP63357" prefix="U" uservalue="yes">
-<description>The AP63356/AP63357 is a 3.5A, synchronous buck converter with a
-wide input voltage range of 3.8V to 32V. The device fully integrates a
-74mΩ high-side power MOSFET and a 40mΩ low-side power
-MOSFET to provide high-efficiency step-down DC-DC conversion.</description>
-<gates>
-<gate name="G$1" symbol="AP63357" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="V-DFN3020-13">
-<connects>
-<connect gate="G$1" pin="BST" pad="P$6"/>
-<connect gate="G$1" pin="COMP" pad="P$4"/>
-<connect gate="G$1" pin="EN" pad="P$2"/>
-<connect gate="G$1" pin="FB" pad="P$3"/>
-<connect gate="G$1" pin="GND" pad="P$8"/>
-<connect gate="G$1" pin="PG" pad="P$5"/>
-<connect gate="G$1" pin="SW" pad="P$7 P$9"/>
-<connect gate="G$1" pin="VIN" pad="P$1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PN" value="AP63357DV-7"/>
-<attribute name="PROD_ID" value="VREG-17224"/>
-<attribute name="VALUE" value="AP63357"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="6.8UH" prefix="L" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
@@ -25932,6 +25848,117 @@ digital gyroscope.&lt;/p&gt;</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-IC-Power">
+<description>&lt;h3&gt;SparkFun Power Driver and Management ICs&lt;/h3&gt;
+In this library you'll find anything that has to do with power delivery, or making power supplies.
+&lt;p&gt;Contents:
+&lt;ul&gt;&lt;li&gt;LDOs&lt;/li&gt;
+&lt;li&gt;Boost/Buck controllers&lt;/li&gt;
+&lt;li&gt;Charge pump controllers&lt;/li&gt;
+&lt;li&gt;Power sequencers&lt;/li&gt;
+&lt;li&gt;Power switches&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="V-DFN3020-13">
+<smd name="P$1" x="-0.675" y="-0.75" dx="1.5" dy="0.8" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$8" x="-0.675" y="0.75" dx="1.5" dy="0.8" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$9" x="-0.79" y="0" dx="1.73" dy="0.4" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$2" x="0.375" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$3" x="0.825" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$4" x="1.275" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$5" x="1.275" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="P$6" x="0.825" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="P$7" x="0.375" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
+<wire x1="-1.5" y1="1.05" x2="-1.5" y2="-1.05" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="-1.05" x2="1.5" y2="-1.05" width="0.1" layer="51"/>
+<wire x1="1.5" y1="-1.05" x2="1.5" y2="1.05" width="0.1" layer="51"/>
+<wire x1="1.5" y1="1.05" x2="-1.5" y2="1.05" width="0.1" layer="51"/>
+<wire x1="-1" y1="1.4" x2="-1.8" y2="1.4" width="0.3" layer="21"/>
+<wire x1="-1.8" y1="1.4" x2="-1.8" y2="0.9" width="0.3" layer="21"/>
+<wire x1="1.8" y1="-0.9" x2="1.8" y2="-1.4" width="0.3" layer="21"/>
+<wire x1="1.8" y1="-1.4" x2="1" y2="-1.4" width="0.3" layer="21"/>
+<circle x="-1.8" y="-1.5" radius="0.254" width="0" layer="21"/>
+<rectangle x1="-1.47" y1="-1.2" x2="0.12" y2="-0.3" layer="29"/>
+<rectangle x1="0.18" y1="-1.2" x2="0.57" y2="-0.5" layer="29"/>
+<rectangle x1="0.63" y1="-1.2" x2="1.02" y2="-0.5" layer="29"/>
+<rectangle x1="1.08" y1="-1.2" x2="1.47" y2="-0.5" layer="29"/>
+<rectangle x1="0.18" y1="0.5" x2="0.57" y2="1.2" layer="29"/>
+<rectangle x1="0.63" y1="0.5" x2="1.02" y2="1.2" layer="29"/>
+<rectangle x1="1.08" y1="0.5" x2="1.47" y2="1.2" layer="29"/>
+<rectangle x1="-1.47" y1="0.3" x2="0.12" y2="1.2" layer="29"/>
+<rectangle x1="-1.7" y1="-0.25" x2="0.13" y2="0.25" layer="29"/>
+<rectangle x1="-1.48" y1="-0.15" x2="-0.18" y2="0.15" layer="31"/>
+<rectangle x1="-1.24" y1="-1.05" x2="-0.11" y2="-0.45" layer="31"/>
+<rectangle x1="-1.25" y1="0.45" x2="-0.12" y2="1.05" layer="31"/>
+<rectangle x1="0.26" y1="-1.08" x2="0.49" y2="-0.63" layer="31"/>
+<rectangle x1="0.71" y1="-1.08" x2="0.94" y2="-0.63" layer="31"/>
+<rectangle x1="1.16" y1="-1.08" x2="1.39" y2="-0.63" layer="31"/>
+<rectangle x1="1.16" y1="0.63" x2="1.39" y2="1.08" layer="31"/>
+<rectangle x1="0.71" y1="0.63" x2="0.94" y2="1.08" layer="31"/>
+<rectangle x1="0.26" y1="0.63" x2="0.49" y2="1.08" layer="31"/>
+</package>
+</packages>
+<symbols>
+<symbol name="AP63357">
+<wire x1="-12.7" y1="-25.4" x2="12.7" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-25.4" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="22.86" x2="-12.7" y2="-25.4" width="0.254" layer="94"/>
+<pin name="VIN" x="-15.24" y="17.78" visible="pin" length="short" direction="pwr"/>
+<pin name="EN" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="COMP" x="-15.24" y="-12.7" visible="pin" length="short"/>
+<pin name="GND" x="-15.24" y="-20.32" visible="pin" length="short" direction="sup"/>
+<pin name="PG" x="15.24" y="-20.32" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="FB" x="15.24" y="-12.7" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="SW" x="15.24" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="BST" x="15.24" y="17.78" visible="pin" length="short" rot="R180"/>
+<text x="-12.7" y="25.4" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-12.7" y="-30.48" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AP63357" prefix="U" uservalue="yes">
+<description>The AP63356/AP63357 is a 3.5A, synchronous buck converter with a
+wide input voltage range of 3.8V to 32V. The device fully integrates a
+74mΩ high-side power MOSFET and a 40mΩ low-side power
+MOSFET to provide high-efficiency step-down DC-DC conversion.</description>
+<gates>
+<gate name="G$1" symbol="AP63357" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="V-DFN3020-13">
+<connects>
+<connect gate="G$1" pin="BST" pad="P$6"/>
+<connect gate="G$1" pin="COMP" pad="P$4"/>
+<connect gate="G$1" pin="EN" pad="P$2"/>
+<connect gate="G$1" pin="FB" pad="P$3"/>
+<connect gate="G$1" pin="GND" pad="P$8"/>
+<connect gate="G$1" pin="PG" pad="P$5"/>
+<connect gate="G$1" pin="SW" pad="P$7 P$9"/>
+<connect gate="G$1" pin="VIN" pad="P$1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PN" value="AP63357DV-7"/>
+<attribute name="PROD_ID" value="VREG-17224"/>
+<attribute name="VALUE" value="AP63357"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -26036,7 +26063,7 @@ digital gyroscope.&lt;/p&gt;</description>
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="SUPPLY19" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
-<part name="U2" library="Buck5V" deviceset="AP63357" device="" value="AP63357"/>
+<part name="U2" library="SparkFun-IC-Power" deviceset="AP63357" device="" value="AP63357"/>
 <part name="C9" library="SparkFun-Capacitors" deviceset="10UF" device="-0805-25V-10%" value="10uF"/>
 <part name="GND16" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C10" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
@@ -27294,8 +27321,8 @@ to disconnect from IO22</text>
 <segment>
 <pinref part="TP33" gate="G$1" pin="1"/>
 <pinref part="SUPPLY28" gate="G$1" pin="3.3V"/>
-<wire x1="226.06" y1="60.96" x2="223.52" y2="60.96" width="0.1524" layer="91" style="longdash"/>
-<wire x1="223.52" y1="60.96" x2="223.52" y2="63.5" width="0.1524" layer="91" style="longdash"/>
+<wire x1="226.06" y1="60.96" x2="223.52" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="60.96" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
@@ -27500,7 +27527,7 @@ to disconnect from IO22</text>
 <pinref part="TP12" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MOT_3_P" class="0">
+<net name="MOT_3+" class="0">
 <segment>
 <wire x1="391.16" y1="261.62" x2="386.08" y2="261.62" width="0.1524" layer="91"/>
 <label x="386.08" y="261.62" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -27517,7 +27544,7 @@ to disconnect from IO22</text>
 <pinref part="TP25" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MOT_3_N" class="0">
+<net name="MOT_3-" class="0">
 <segment>
 <wire x1="391.16" y1="259.08" x2="386.08" y2="259.08" width="0.1524" layer="91"/>
 <label x="386.08" y="259.08" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -27534,7 +27561,7 @@ to disconnect from IO22</text>
 <pinref part="TP26" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MOT_L_P" class="0">
+<net name="MOT_L+" class="0">
 <segment>
 <wire x1="391.16" y1="231.14" x2="386.08" y2="231.14" width="0.1524" layer="91"/>
 <label x="386.08" y="231.14" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -27551,7 +27578,7 @@ to disconnect from IO22</text>
 <pinref part="TP27" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MOT_L_N" class="0">
+<net name="MOT_L-" class="0">
 <segment>
 <wire x1="391.16" y1="228.6" x2="386.08" y2="228.6" width="0.1524" layer="91"/>
 <label x="386.08" y="228.6" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -27568,7 +27595,7 @@ to disconnect from IO22</text>
 <pinref part="TP28" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MOT_R_P" class="0">
+<net name="MOT_R+" class="0">
 <segment>
 <wire x1="391.16" y1="200.66" x2="386.08" y2="200.66" width="0.1524" layer="91"/>
 <label x="386.08" y="200.66" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -27585,7 +27612,7 @@ to disconnect from IO22</text>
 <pinref part="TP30" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MOT_R_N" class="0">
+<net name="MOT_R-" class="0">
 <segment>
 <wire x1="391.16" y1="198.12" x2="386.08" y2="198.12" width="0.1524" layer="91"/>
 <label x="386.08" y="198.12" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -27602,7 +27629,7 @@ to disconnect from IO22</text>
 <pinref part="TP32" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MOT_4_P" class="0">
+<net name="MOT_4+" class="0">
 <segment>
 <wire x1="391.16" y1="170.18" x2="386.08" y2="170.18" width="0.1524" layer="91"/>
 <label x="386.08" y="170.18" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -27619,7 +27646,7 @@ to disconnect from IO22</text>
 <pinref part="TP29" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MOT_4_N" class="0">
+<net name="MOT_4-" class="0">
 <segment>
 <wire x1="391.16" y1="167.64" x2="386.08" y2="167.64" width="0.1524" layer="91"/>
 <label x="386.08" y="167.64" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
