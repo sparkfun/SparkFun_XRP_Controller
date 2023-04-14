@@ -395,6 +395,10 @@
 <rectangle x1="17.653" y1="16.129" x2="17.907" y2="16.256" layer="41"/>
 <rectangle x1="52.197" y1="6.604" x2="52.324" y2="6.858" layer="41"/>
 <text x="31.75" y="1.27" size="1.778" layer="22" font="vector" ratio="15" rot="MR0" align="center">v10</text>
+<text x="73.66" y="39.37" size="1.778" layer="51" font="vector" ratio="15" align="top-left">Solder Mask: Red
+Thickness: 1.6mm
+Two layer design
+Finish: Lead Free HASL</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -1753,6 +1757,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.5334" y1="0.4318" x2="0.4826" y2="-0.4572" width="0.1524" layer="21" curve="276.630044"/>
 <wire x1="-2.54" y1="0" x2="-1.9558" y2="0" width="0.1524" layer="21"/>
 <circle x="-2.2352" y="0" radius="0.6604" width="0.1524" layer="21"/>
+</package>
+<package name="ORDERING_INSTRUCTIONS">
+<description>&lt;h3&gt;Special Ordering Instructions Alert&lt;/h3&gt;
+&lt;p&gt;Indicates that the PCB material, colors, copper weights, and/or thickness are non-standard.&lt;/p&gt;
+&lt;p&gt;(Standard is 1.6mm FR4, 1 oz copper, immersion silver plating, red soldermask, white silkscreen.)&lt;/p&gt;
+&lt;p&gt;Use 0.7" Vector font @ 8% ratio</description>
+<text x="1.27" y="-1.27" size="3.048" layer="51" font="vector" ratio="15" align="top-left">Ordering Instructions:</text>
+<wire x1="0" y1="0" x2="101.6" y2="0" width="0.2032" layer="51"/>
+<wire x1="101.6" y1="0" x2="101.6" y2="-8.89" width="0.2032" layer="51"/>
+<wire x1="101.6" y1="-8.89" x2="101.6" y2="-50.8" width="0.2032" layer="51"/>
+<wire x1="101.6" y1="-50.8" x2="0" y2="-50.8" width="0.2032" layer="51"/>
+<wire x1="0" y1="-50.8" x2="0" y2="-8.89" width="0.2032" layer="51"/>
+<wire x1="0" y1="-8.89" x2="0" y2="0" width="0.2032" layer="51"/>
+<wire x1="0" y1="-8.89" x2="101.6" y2="-8.89" width="0.2032" layer="51"/>
+<text x="1.27" y="-6.35" size="1.778" layer="51" font="vector" align="top-left">(Add these comments when uploading gerbers.)</text>
 </package>
 </packages>
 </library>
@@ -22787,6 +22806,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <element name="U$14" library="output" package="#MR##1" value="" x="59.182" y="36.576" smashed="yes"/>
 <element name="U$18" library="output" package="#M4##0" value="" x="59.182" y="25.4" smashed="yes"/>
 <element name="U$19" library="output" package="#M4##5" value="" x="59.182" y="26.416" smashed="yes"/>
+<element name="U$36" library="SparkFun-Aesthetics" package="ORDERING_INSTRUCTIONS" value="" x="71.12" y="50.8" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -24496,6 +24516,10 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
