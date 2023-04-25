@@ -23542,11 +23542,11 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </signal>
 <signal name="RP_IO28/VIN_MEAS">
 <wire x1="22.06" y1="18.415" x2="24.13" y2="18.415" width="0.254" layer="1"/>
-<wire x1="25.4" y1="31.242" x2="24.257" y2="32.385" width="0.254" layer="1"/>
+<wire x1="25.4" y1="30.861" x2="23.876" y2="32.385" width="0.254" layer="1"/>
 <wire x1="24.13" y1="18.415" x2="25.4" y2="19.685" width="0.254" layer="1"/>
-<wire x1="25.4" y1="19.685" x2="25.4" y2="31.242" width="0.254" layer="1"/>
+<wire x1="25.4" y1="19.685" x2="25.4" y2="30.861" width="0.254" layer="1"/>
 <wire x1="20.066" y1="32.639" x2="20.32" y2="32.385" width="0.254" layer="1"/>
-<wire x1="24.257" y1="32.385" x2="20.32" y2="32.385" width="0.254" layer="1"/>
+<wire x1="23.876" y1="32.385" x2="20.32" y2="32.385" width="0.254" layer="1"/>
 <contactref element="J13" pad="4"/>
 <wire x1="19.05" y1="45.72" x2="20.066" y2="44.704" width="0.254" layer="1"/>
 <contactref element="TP24" pad="1"/>
