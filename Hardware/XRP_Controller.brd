@@ -427,6 +427,8 @@ Finish: Lead Free HASL</text>
 <wire x1="60.706" y1="44.7675" x2="60.706" y2="48.641" width="0.1524" layer="21"/>
 <wire x1="61.976" y1="46.6725" x2="58.166" y2="46.6725" width="0.1524" layer="21"/>
 <wire x1="60.706" y1="44.7675" x2="58.166" y2="44.7675" width="0.1524" layer="21"/>
+<wire x1="62.23" y1="7.3025" x2="59.69" y2="7.3025" width="0.1778" layer="21"/>
+<wire x1="59.69" y1="11.7475" x2="62.23" y2="11.7475" width="0.1778" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
