@@ -1,4 +1,4 @@
-In this document, we'll take a close look at the heart of the XRP Robotics Platform Kit, the XRP Controller. This document outlines all of the parts on this board you'll interact with while building and using the XRP Robotics Platform Kit.
+In this document, we'll take a close look at the heart of the Experimental Robotics Platform (XRP) Kit, the XRP Controller. This document outlines all of the parts on this board you'll interact with while building and using the XRP Kit.
 
 ## Controller Board Overview
 
@@ -6,13 +6,14 @@ Let's take a broad look at the major components on the XRP Controller. The photo
 
 <figure markdown>
 [![Overview photo labeling the major components and other hardware on the XRP Controller Board](./assets/img/XRP_Controller-Overview.jpg){ width="400"}](./assets/img/XRP_Controller-Overview.jpg "Click to enlarge")
+<figcaption>Having trouble seeing the detail in the image? Click on it for a larger view.</figcaption>
 </figure>
 
-You'll notice that along with the arrows showing the name of some of the smaller components, the board has what's referred to as silkscreen to label all the connectors, buttons, LEDs and other parts you'll interact with while building and using the XRP Robotics Kit.
+You'll notice that along with the arrows showing the name of some of the smaller components, the board uses what's called silkscreen to label all the connectors, buttons, LEDs and other parts you'll interact with while building and using the XRP Robotics Kit.
 
-## Raspberry Pico W
+## Raspberry Pi Pico W
 
-The Raspberry Pico W microcontroller acts as the brain of this board. It combines a RP2040 processor with a wireless module for both 2.4GHz 802.11n wireless LAN and Bluetooth<sup>&trade;</sup> 5.2. The RP2040 communicates with the motor controllers, IMU and other components to control the robotics kit's behavior. The photo below highlights the Pico W on the Controller Board:
+The Raspberry Pi Pico W microcontroller acts as the brain of this board. It combines a RP2040 processor with a wireless module for both 2.4GHz 802.11n wireless LAN and Bluetooth<sup>&trade;</sup> 5.2. The RP2040 communicates with the motor controllers, IMU and other components to control the robotics kit's behavior. The photo below highlights the Pico W on the Controller Board:
 
 <figure markdown>
 [![Photo highlighting the Pico W microcontroller](./assets/img/XRP_Controller-PicoW.jpg){ width="400"}](./assets/img/XRP_Controller-PicoW.jpg "Click to enlarge")
@@ -28,17 +29,17 @@ The pair of DRV8835 H-Bridge motor drivers on the XRP Controller Board control t
 [![Photo highlighting the motor drivers.](./assets/img/XRP_Controller-Motor_Drivers.jpg){ width="400"}](./assets/img/XRP_Controller-Motor_Drivers.jpg "Click to enlarge")
 </figure>
 
-The term H-bridge comes from how this circuit design looks on a schematic diagram. It has four internal switches that control whether the motor spins Clockwise (CW), Counter Clockwise (CCW), Short Break (to slow the motor) or Stop (completely stop the motor). When going through the XRP Robotics Kit curriculum you'll learn how to program the robot to tell the motor drivers to control the motors' speed and direction.  
+The term H-bridge comes from how this circuit design looks on a schematic diagram. It has four internal switches that control whether the motor spins Clockwise (CW), Counter Clockwise (CCW), Coasts (no drive power), and Stops. When going through the XRP Kit curriculum you'll learn how to program the robot to tell the motor drivers to control the motors' speed and direction.  
 
 ## 6-Dof IMU
 
-The 6-DoF (Degrees of Freedom) IMU (Inertial Measurement Unit) combines an accelerometer and gyroscope into a single IC (integrated circuit). This sensor lets you to measure the robot's acceleration in three dimensions and also measure the orientation and angle of the robot. 
+The 6-DoF (Degrees of Freedom) IMU (Inertial Measurement Unit) combines an accelerometer and gyroscope into a single IC (integrated circuit). This sensor lets you measure the robot's acceleration in three dimensions and also measure the orientation and angle of the robot. 
 
 <figure markdown>
 [![Photo highlighting the 6 DoF IMU.](./assets/img/XRP_Controller-IMU.jpg){ width="400"}](./assets/img/XRP_Controller-IMU.jpg "Click to enlarge")
 </figure>
 
-The accelerometer in this chip has four measurement ranges of &plusmn;2/&plusmn;4/&plusmn;8/&plusmn;16 g. These ranges allow you to customize the limits of The gyroscope has five selectable measurement ranges of &plusmn;125/&plusmn;250/&plusmn;500/&plusmn;1000/&plusmn;2000 DPS (degrees per second).
+The accelerometer in this chip has four measurement ranges of &plusmn;2/&plusmn;4/&plusmn;8/&plusmn;16 g. These ranges allow you to customize the limits of the acceleration forces measured. The gyroscope has five selectable measurement ranges of &plusmn;125/&plusmn;250/&plusmn;500/&plusmn;1000/&plusmn;2000 DPS (degrees per second).
 
 ## Power Components
 
@@ -50,7 +51,7 @@ Now let's take a closer look at the parts on this board used for providing power
 
 ### Barrel Jack Connector
 
-The barrel jack connector is the primary power input for the entire XRP Robotics Kit. This connector mates with the cable from the XRP Robotics Kit's battery pack for battery-powered operation. Take note that the maximum safe voltage that can be applied to this connector is <b>11V</b> though the 4-AA battery pack included with the Robotics Kit supplies a maximum of <b>6V</b> so most users will have no issues when it comes to going past the max voltage.
+The barrel jack connector is the primary power input for the entire XRP Kit. This connector mates with the cable from the XRP Kit's battery pack for battery-powered operation. Take note that the maximum safe voltage that can be applied to this connector is <b>11V</b> though the 4-AA battery pack included with the kit supplies a maximum of <b>6V</b> so most users will have no issues when it comes to going past the max voltage.
 
 ### Pico W USB-Connector
 
@@ -58,7 +59,7 @@ The Pico W has a Micro-USB connector that can be used to power the Controller Bo
 
 ### Power Switch
 
-The power switch highlighted below controls the voltage input to the Controller Board. This two-way switch turns power on and off regardless of whether either of the power inputs discussed above is connected. You can use this to turn the robot off while keeping the battery pack or USB cable plugged in.
+The power switch highlighted above controls the voltage input to the Controller Board. This two-way switch turns the kit's power on and off. You can use this to turn the robot off while keeping the battery pack plugged in. The switch does not affect the Pico W's power when a USB cable is plugged in.
 
 ## Motor Connectors
 
@@ -70,15 +71,15 @@ The Controller Board has four six-pin connectors labeled <b>Motor L</b>, <b>Moto
 
 ### DC Motor Connectors
 
-The DC Motor connectors are where you'll plug in the left and right motors while assembling the kit. These connectors include the power connections for the motor as well as connections for the encoders on the motors. The Left motor connector connects the encoder's pins to GPIO4 and GPIO5 and the Right motor connector connects the encoder's pins to GPIO12 and GPIO13. You'll use these pins to monitor how many rotations the motor completes and use that data to determine the speed of the motors. The Controller Board has two extra motor connectors for expansion projects using more than two motors.
+The DC Motor connectors are where you'll plug in the left and right motors while assembling the kit. These connectors include the power connections for the motor as well as the encoders on the motors. The board routes these connections through the motor drivers to GPIO pins on the Pico W. You'll use these pins to monitor how many rotations the motor completes and use that data to determine the speed of the motors. Refer to the Pinout table at the end of this document for the specific GPIO pins each motor connects to on the Pico W. The Controller Board has two extra motor connectors for expansion projects using more than two motors.
 
 ### Servo Motor Connectors
 
-The two three-pin connectors on either side of the board are extra connectors for expansion projects using servo motors. These connectors have power pins (<b>5V</b> and Ground) and a signal pin to control the motion of the servo motor. Servo motors use a communication method called pulse-width-modulation that tells the motor to move and with some motors, where to move to. If you're interested in learning more about how servo motors work, you may want to check out SparkFun's [Servos Explained](https://www.sparkfun.com/servos) page for information and tutorials on how to use them.
+The two three-pin connectors on either side of the board are extra connectors for expansion projects using servo motors. These connectors have power pins (<b>5V</b> and Ground) and a signal pin to control the motion of the servo motor. Servo motors use a communication method called pulse width modulation that tells the motor to move and with some motors, where to move to. If you're interested in learning more about how servo motors work, you may want to check out SparkFun's [Servos Explained](https://www.sparkfun.com/servos) page for information and tutorials on how to use them.
 
 ## Expansion Connectors
 
-The Controller Board has four four-pin connectors labeled (from left to right when looking at the labels upright) <b>Line</b>, <b>Extra</b>, <b>Qwiic</b>, and <b>Range</b>. Their labels indicate their use as well as which GPIO pins they connect to on the Pico W. These connectors provide an easy plug-in connection for the line follower and distance sensor as well as two extra connectors for expansion projects. These connectors are polarized meaning they only work when connected properly but because they are keyed, there is only one way to plug a cable into them.
+The Controller Board has four four-pin connectors labeled (from left to right when looking at the labels upright) <b>Line</b>, <b>Extra</b>, <b>Qwiic</b>, and <b>Range</b>. Their labels indicate their use as well as which GPIO pins they connect to on the Pico W. These connectors provide an easy plug-in connection for the line follower and distance sensor as well as two extra connectors for expansion projects. These connectors are polarized meaning they only work when connected properly but they are keyed and there is only one way to plug a cable into them.
 
 <figure markdown>
 [![Photo highlighting Qwiic and expansion connectors](./assets/img/XRP_Controller-Qwiic.jpg){width="400"}](./assets/img/XRP_Controller-Qwiic.jpg)
@@ -92,17 +93,17 @@ The Line connector is where you'll plug the cable for the line follower sensor i
 
 The Range connector is where you'll plug the cable for the ultrasonic range sensor into. It connects the distance sensor's Echo and Trigger lines to the Pico W's GPIO21 (Echo) and GPIO20 (Trig). You'll use these pins to receive distance data from the ultrasonic range sensor.
 
-### Qwiic and Extra Connectors
+### Qwiic Connector
 
-The last two connectors here are the Qwiic and Extra connectors. These are not used in the standard kit but we've included them to provide options to expand the capabilities of the Robotics Kit. 
+The Qwiic connector works with SparkFun's [Qwiic ecosystem](https://www.sparkfun.com/qwiic) of sensors that communicate over I<sup>2</sup>C. This is a two-wire communication protocol that works with a large variety of sensors and other electronics. With this, you can customize the XRP Kit to add things like environmental sensing, OLED screens, data logging, and more!
 
-The Qwiic connector works with SparkFun's [Qwiic ecosystem](https://www.sparkfun.com/qwiic) of sensors that communicate over I<sup>2</sup>C. This is a two-wire communication protocol that works with a large variety of sensors and other electronics. With this, you can customize the XRP Robotics Kit to add things like environmental sensing, OLED screens, data logging, and more!
+### Extra Connector
 
-The Extra connector has pins for both power and ground as well as pins that connect to the Pico W's GPIO28 and GPIO22. Note, these pins are <i>shared</i> with other functionality on the XRP Controller Board. GPIO28 is shared with the VIN Measure pin which lets you measure the current the robot is consuming through the primary voltage input. GPIO22 is shared with the User Button.
+The Extra connector has pins for both power and ground as well as pins that connect to the Pico W's GPIO28 and GPIO22. Note, these pins are <i>shared</i> with other functionality on the XRP Controller Board. GPIO28 is shared with the VIN Measure pin which lets you measure the voltage level on VIN so you can monitor the remaining battery charge. GPIO22 is shared with the User Button. Both pins' primary functions can be disabled with the solder jumpers, refer to the Solder Jumpers section below for more information.
 
 ## Buttons
 
-The Controller Board has two push buttons labeled <b>USER</b> and <b>RESET</b>. The USER button connects to GPIO22 on the Pico W which allows it to be programmed for various purposes. The RESET button does just what its name suggests and resets the entire board when pressed. This can help to reboot the robot or to restart a sequence you want the Robotics Kit to perform.
+The Controller Board has two push buttons labeled <b>USER</b> and <b>RESET</b>. The USER button connects to GPIO22 on the Pico W which allows it to be programmed for various purposes. The RESET button does just what its name suggests and resets the entire board when pressed. This can help to reboot the robot or to restart a sequence you want the XRP Kit to perform.
 
 <figure markdown>
 [![Photo highlighting buttons.](./assets/img/XRP_Controller-Buttons.jpg){width="400"}](./assets/img/XRP_Controller-Buttons.jpg)
@@ -116,15 +117,16 @@ There are three LEDs on the Controller Board labeled <b>MOT</b>, <b>SYS</b>, and
 [![Photo highlighting LEDs](./assets/img/XRP_Controller-LEDs.jpg){width="400"}](./assets/img/XRP_Controller-LEDs.jpg)
 </figure>
 
-These LEDs provide a visual indication to the user. The LEDs labeled <b>MOT</b> and <b>SYS</b> turn on when their respective power rails are powered. The <b>MOT</b> LED turns on when the <b>5V</b> circuit is powered. This circuit provides <b>5V</b> to the servo connectors and . The <b>SYS</b> LED turns on when the <b>3.3V</b>/System circuit is powered. This circuit powers the motor connectors and the expansion headers. The LED on the Pico W labeled <b>LED</b> is a user-programmable status LED you can program for whatever behavior you prefer. For example, you can have it turn on when the distance sensor reports a certain distance.  
+These LEDs provide a visual indication to the user. The LEDs labeled <b>MOT</b> and <b>SYS</b> turn on when their respective power rails are powered. The <b>MOT</b> LED turns on when the motors have power available. The <b>SYS</b> LED turns on when the <b>3.3V</b>/System circuit is powered. This circuit powers the Pico W, sensors, and the expansion connectos. The LED on the Pico W labeled <b>LED</b> is a user-programmable status LED you can program for whatever behavior you prefer. For example, you can have it turn on when the distance sensor reports a certain distance.  
 
 ## Solder Jumpers
 
 !!! warning Advanced Users Only
 
-    These solder jumpers can change the behavior of the board in a lasting way. Using these requires extra tools not included in the Robotics Kit along with knowledge of how to use and interact with solder jumpers. We recommend that only advanced users adjust and change the solder jumpers.
+    These solder jumpers can change the behavior of the board in a lasting way. Using these requires extra tools not included in the XRP
+     Kit along with knowledge of how to use and interact with solder jumpers. We recommend that only advanced users adjust and change the solder jumpers. If you'd like to learn more about how to use solder jumpers, check out SparkFun's [How to Work with Jumper Pads and PCB Traces](https://learn.sparkfun.com/tutorials/how-to-work-with-jumper-pads-and-pcb-traces) tutorial.
 
-Lastly, this Controller Board has nine solder jumpers. A solder jumper provides a customization option for advanced users to control the behavior of the pins and components they connect to. Typically, these control The solder jumpers on this board are labeled (from top-to-bottom when looking at the photo below): <b>VIN_MEAS</b>, <b>MOT_MODE_R/4</b>, <b>MOT_MODE_L/3</b>, <b>USER_BTN</b>, <b>I2C</b>, <b>IMU_ADR</b>, <b>SYS</b>, <b>MOT</b>, and <b>VUSB</b>. 
+Lastly, this Controller Board has nine solder jumpers. A solder jumper provides a customization option for advanced users to control the behavior of the pins and components they connect to. The solder jumpers on this board are labeled (from top-to-bottom when looking at the photo below): <b>VIN_MEAS</b>, <b>MOT_MODE_R/4</b>, <b>MOT_MODE_L/3</b>, <b>USER_BTN</b>, <b>I2C</b>, <b>IMU_ADR</b>, <b>SYS</b>, <b>MOT</b>, and <b>VUSB</b>. 
 
 <figure markdown>
 [![Photo highlighting solder jumpers.](./assets/img/XRP_Controller-Solder_Jumpers.jpg){width="400"}](./assets/img/XRP_Controller-Solder_Jumpers.jpg)
