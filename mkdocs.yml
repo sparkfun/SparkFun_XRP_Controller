@@ -15,7 +15,7 @@ copyright:
 theme:
   # Theme: https://squidfunk.github.io/mkdocs-material/
   name: material
-  logo: assets/images/sfe_logo_sq.png
+  logo: assets/img/sfe_logo_sq.png
   palette:
     primary: grey
     accent: red

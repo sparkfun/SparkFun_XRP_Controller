@@ -1,4 +1,4 @@
-In this document, we'll take a close look at the heart of the Experimental Robotics Platform (XRP) Kit, the XRP Controller. This document outlines all of the parts on this board you'll interact with while building and using the XRP Kit.
+In this document, we'll take a close look at the heart of the Experiential Robotics Platform (XRP) Kit, the XRP Controller. This document outlines all of the parts on this board you'll interact with while building and using the XRP Kit.
 
 ## Controller Board Overview
 
