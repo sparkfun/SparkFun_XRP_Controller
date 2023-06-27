@@ -102,10 +102,10 @@ The Extra connector has pins for both power and ground as well as pins that conn
 
 ## Buttons
 
-The Controller Board has two push buttons labeled <b>USER</b> and <b>RESET</b>. The USER button connects to GPIO22 on the Pico W which allows it to be programmed for various purposes. The RESET button does just what its name suggests and resets the entire board when pressed. This can help to reboot the robot or to restart a sequence you want the Robotics Kit to perform.
+The Controller Board has three push buttons labeled <b>USER</b>, <b>RESET</b>, and <b>BOOTSEL</b> (on the Pico W). The USER button connects to GPIO22 on the Pico W which allows it to be programmed for various purposes. The RESET button does just what its name suggests and resets the entire board when pressed. This can help to reboot the robot or to restart a sequence you want the Robotics Kit to perform. Holding the BOOTSEL button either when plugging in a USB cable or when pressing the RESET button sets the Pico W to behave as a mass storage device when connected to a computer. 
 
 <figure markdown>
-[![Photo highlighting buttons.](./assets/img/XRP_Controller-Buttons.jpg){width="400"}](./assets/img/XRP_Controller-Buttons.jpg)
+[![Photo highlighting buttons.](./assets/img/XRP_Controller-Push_Buttons.jpg){width="400"}](./assets/img/XRP_Controller-Push_Buttons.jpg)
 </figure>
 
 ## LEDs
