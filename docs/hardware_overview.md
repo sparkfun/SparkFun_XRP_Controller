@@ -23,7 +23,7 @@ Think of the Pico W as a brain sending signals to other parts of the "body" to t
 
 ## DRV8835 Motor Drivers
 
-The pair of DRV8835 H-Bridge motor drivers on the XRP Controller Board control the direction and speed of the Robotics Kit's motors.
+The pair of DRV8835 H-Bridge motor drivers from Texas Instruments<sup>&trade;</sup> on the XRP Controller Board control the direction and speed of the Robotics Kit's motors.
 
 <figure markdown>
 [![Photo highlighting the motor drivers.](./assets/img/XRP_Controller-Motor_Drivers.jpg){ width="400"}](./assets/img/XRP_Controller-Motor_Drivers.jpg "Click to enlarge")
@@ -31,9 +31,9 @@ The pair of DRV8835 H-Bridge motor drivers on the XRP Controller Board control t
 
 The term H-bridge comes from how this circuit design looks on a schematic diagram. It has four internal switches that control whether the motor spins Clockwise (CW), Counter Clockwise (CCW), Coasts (no drive power), and Stops. When going through the XRP Kit curriculum you'll learn how to program the robot to tell the motor drivers to control the motors' speed and direction.  
 
-## 6-Dof IMU
+## LSM6DSO 6-Dof IMU
 
-The 6-DoF (Degrees of Freedom) IMU (Inertial Measurement Unit) combines an accelerometer and gyroscope into a single IC (integrated circuit). This sensor lets you measure the robot's acceleration in three dimensions and also measure the orientation and angle of the robot. 
+The LSM6DSO 6-DoF (Degrees of Freedom) IMU (Inertial Measurement Unit) from STMicroelectronics<sup>&trade;</sup> combines an accelerometer and gyroscope into a single IC (integrated circuit). This sensor lets you measure the robot's acceleration in three dimensions and also measure the orientation and angle of the robot. 
 
 <figure markdown>
 [![Photo highlighting the 6 DoF IMU.](./assets/img/XRP_Controller-IMU.jpg){ width="400"}](./assets/img/XRP_Controller-IMU.jpg "Click to enlarge")
@@ -51,7 +51,7 @@ Now let's take a closer look at the parts on this board used for providing power
 
 ### Barrel Jack Connector
 
-The barrel jack connector is the primary power input for the entire XRP Kit. This connector mates with the cable from the XRP Kit's battery pack for battery-powered operation. Take note that the maximum safe voltage that can be applied to this connector is <b>11V</b> though the 4-AA battery pack included with the kit supplies a maximum of <b>6V</b> so most users will have no issues when it comes to going past the max voltage.
+The barrel jack connector is the primary power input for the entire XRP Kit. This connector mates with the cable from the XRP Kit's battery pack for battery-powered operation. Take note that the maximum safe voltage that can be applied to this connector is <b>11V</b> and the minimum to run the system is <b>5V</b>. The 4-AA battery pack included with the kit supplies a maximum of <b>6V</b> so most users will have no issues exceeding the max voltage.
 
 ### Pico W USB-Connector
 
@@ -71,11 +71,11 @@ The Controller Board has four six-pin connectors labeled <b>Motor L</b>, <b>Moto
 
 ### DC Motor Connectors
 
-The DC Motor connectors are where you'll plug in the left and right motors while assembling the kit. These connectors include the power connections for the motor as well as the encoders on the motors. The board routes these connections through the motor drivers to GPIO pins on the Pico W. You'll use these pins to monitor how many rotations the motor completes and use that data to determine the speed of the motors. Refer to the Pinout table at the end of this document for the specific GPIO pins each motor connects to on the Pico W. The Controller Board has two extra motor connectors for expansion projects using more than two motors.
+The DC Motor connectors are where you'll plug in the left and right motors while assembling the kit. These connectors include the power connections for the motor as well as the encoders on the motors. The board routes these connections through the motor drivers to GPIO pins on the Pico W. You'll use these pins to monitor how many rotations the motor completes and use that data to determine how far the robot has traveled. Refer to the Pinout table at the end of this document for the specific GPIO pins each motor connects to on the Pico W. The Controller Board has two extra motor connectors for expansion projects using more than two motors.
 
 ### Servo Motor Connectors
 
-The two three-pin connectors on either side of the board are extra connectors for expansion projects using servo motors. These connectors have power pins (<b>5V</b> and Ground) and a signal pin to control the motion of the servo motor. Servo motors use a communication method called pulse width modulation that tells the motor to move and with some motors, where to move to. If you're interested in learning more about how servo motors work, you may want to check out SparkFun's [Servos Explained](https://www.sparkfun.com/servos) page for information and tutorials on how to use them.
+The two three-pin connectors on either side of the board labeled Servo 1 and Servo 2 mate with servo motors. You'll use the Servo 2 connector to hook up the servo included in the XRP kit. Servo 1 connector is an extra one for expansion projects. These connectors have power pins (<b>5V</b> and Ground) and a signal pin to control the motion of the servo motor. Servo motors use a communication method called pulse width modulation (PWM) that tells the motor to move and with some motors, where to move to. If you're interested in learning more about how servo motors work, you may want to check out SparkFun's [Servos Explained](https://www.sparkfun.com/servos) page for information and tutorials on how to use them.
 
 ## Expansion Connectors
 
@@ -103,7 +103,7 @@ The Extra connector has pins for both power and ground as well as pins that conn
 
 ## Buttons
 
-The Controller Board has three push buttons labeled <b>USER</b>, <b>RESET</b>, and <b>BOOTSEL</b> (on the Pico W). The USER button connects to GPIO22 on the Pico W which allows it to be programmed for various purposes. The RESET button does just what its name suggests and resets the entire board when pressed. This can help to reboot the robot or to restart a sequence you want the Robotics Kit to perform. Holding the BOOTSEL button either when plugging in a USB cable or when pressing the RESET button sets the Pico W to behave as a mass storage device when connected to a computer. 
+The Controller Board has three push buttons labeled <b>USER</b>, <b>RESET</b>, and <b>BOOTSEL</b> (on the Pico W). The USER button connects to GPIO22 on the Pico W which allows it to be programmed for various purposes. The RESET button does just what its name suggests and resets the entire board when pressed. This can help to reboot the robot or to restart a sequence you want the Robotics Kit to perform. Holding the BOOTSEL button either when plugging in a USB cable or when pressing the RESET button sets the Pico W to behave as a mass storage device when connected to a computer for uploading firmware. 
 
 <figure markdown>
 [![Photo highlighting buttons.](./assets/img/XRP_Controller-Push_Buttons.jpg){width="400"}](./assets/img/XRP_Controller-Push_Buttons.jpg)
@@ -143,54 +143,54 @@ Lastly, this Controller Board has nine solder jumpers. A solder jumper provides 
         <td>VIN_MEAS</td>
         <td>CLOSED</td>
         <td>Completes the VIN circuit.</td>
-        <td>Open to disrupt the VIN circuit to measure total current draw.</td>
+        <td>Open to disrupt the VIN circuit to measure voltage on VIN with a multimeter.</td>
     </tr>
     <tr>
         <td>MOT_MODE_R/4</td>
         <td>CLOSED</td>
-        <td>Pulls the Right DRV8835's MODE pin to <b>3.3V</b></td>
-        <td>Open to switch the DRV8835 to operate in IN/IN mode.</td>
+        <td>Pulls the Right DRV8835's MODE pin to <b>3.3V</b>.</td>
+        <td>This sets the DRV8835 to run in PH/EN mode by default. Open to switch the DRV8835 to operate in IN/IN mode.</td>
     </tr>
     <tr>
         <td>MOT_MODE_L/3</td>
         <td>CLOSED</td>
-        <td>Pulls the Left DRV8835's MODE pin to <b>3.3V</b></td>
-        <td>Open to switch the DRV8835 to operate in IN/IN mode.</td>
+        <td>Pulls the Left DRV8835's MODE pin to <b>3.3V</b>.</td>
+        <td>This sets the DRV8835 to run in PH/EN mode by default. Open to switch the DRV8835 to operate in IN/IN mode.</td>
     </tr>
     <tr>
         <td>USER_BTN</td>
         <td>CLOSED</td>
-        <td>Completes the User Button circuit to tie it to GPIO22</td>
+        <td>Completes the User Button circuit to tie it to GPIO22.</td>
         <td>Open to disconnect the button from GPIO22.</td>
     </tr>
     <tr>
         <td>I2C</td>
         <td>CLOSED</td>
-        <td>Pulls the SDA/SCL lines to <b>3.3V</b> through two <b>2.2k&ohm;</b></td>
+        <td>Pulls the SDA/SCL lines to <b>3.3V</b> through two <b>2.2k&ohm;</b>.</td>
         <td>Open completely to disable the pull up resistors on the I<sup>2</sup>C bus.</td>
     </tr>
     <tr>
         <td>IMU_ADR</td>
         <td>CLOSED</td>
-        <td>Sets the IMU's address to <b>0x6B</b></td>
-        <td>Open to switch the address to <b>0x6A</b>.</td>
+        <td>Sets the IMU's I<sup>2</sup>C address to <b>0x6B</b>.</td>
+        <td>Open to switch the I<sup>2</sup>C address to <b>0x6A</b>.</td>
     </tr>
     <tr>
         <td>SYS</td>
         <td>CLOSED</td>
-        <td>Completes the SYS Power LED circuit</td>
+        <td>Completes the SYS Power LED circuit.</td>
         <td>Open to disable the SYS Power LED.</td>
     </tr>
     <tr>
         <td>MOT</td>
         <td>CLOSED</td>
-        <td>Completes the MOT Power LED circuit</td>
+        <td>Completes the MOT Power LED circuit.</td>
         <td>Open to disable the MOT Power LED.</td>
     </tr>
     <tr>
         <td>VUSB</td>
         <td>CLOSED</td>
-        <td>Completes the V_USB circuit to provide <b>5V</b> and <b>3.3V</b> to the board from USB</td>
+        <td>Completes the V_USB circuit to provide <b>5V</b> and <b>3.3V</b> to the board from USB.</td>
         <td>Open to prevent motors and servos from being powered by USB.</td>
     </tr>
 </table>
@@ -298,12 +298,12 @@ The table below offers a quick reference for the complete pinout on the XRP Cont
     <tr>
         <td>GPIO18</td>
         <td>Qwiic</td>
-        <td>Qwiic Data Signal</td>
+        <td>Qwiic Data Signal for the IMU & Qwiic Connector</td>
     </tr>
     <tr>
         <td>GPIO19</td>
         <td>Qwiic</td>
-        <td>Qwiic Clock Signal</td>
+        <td>Qwiic Clock Signal for the IMU & Qwiic Connector</td>
     </tr>
     <tr>
         <td>GPIO20</td>
