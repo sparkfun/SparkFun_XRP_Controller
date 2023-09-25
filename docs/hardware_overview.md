@@ -321,6 +321,16 @@ The table below offers a quick reference for the complete pinout on the XRP Cont
         <td>User Button/Extra</td>
     </tr>
     <tr>
+        <td>GPIO26</td>
+        <td>Line</td>
+        <td>Line Follower Left Signal</td>
+    </tr>
+    <tr>
+        <td>GPIO27</td>
+        <td>Line</td>
+        <td>Line Follower Right Signal</td>
+    </tr>
+    <tr>
         <td>GPIO28</td>
         <td>Extra</td>
         <td>VIN_Meas/Extra</td>
