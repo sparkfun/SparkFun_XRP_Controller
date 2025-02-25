@@ -1,4 +1,4 @@
-For more information about the XRP Controller Board, take a look at the following resources:
+For more information about the XRP Controller - Beta, take a look at the following resources:
 
 * [Schematic (PDF)](./assets/hardware_files/XRP_Controller.pdf)
 * [Eagle Files (ZIP)](./assets/hardware_files/XRP_Controller.zip)
