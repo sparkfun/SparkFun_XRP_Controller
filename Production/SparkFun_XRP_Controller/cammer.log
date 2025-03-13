@@ -1,0 +1,34 @@
+2024-12-18 16:50:54,491 - cammer_logger - INFO - Running CAMmer
+2024-12-18 16:50:54,491 - cammer_logger - INFO - ['-l', 'F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,In3.Cu,In4.Cu', '-e', 'Edge.Cuts,User.1']
+2024-12-18 16:50:54,492 - cammer_logger - INFO - CAMMER START: 2024-12-18T16:50:54.492665
+2024-12-18 16:51:20,007 - cammer_logger - INFO - 
+START: 2024-12-18T16:50:54.492665
+Board saved by user.
+Zones filled by user.
+Deleting existing C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GTL
+Renaming C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized-F_Cu.gbr to C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GTL
+Deleting existing C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GL2
+Renaming C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized-In1_Cu.gbr to C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GL2
+Deleting existing C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GL3
+Renaming C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized-In2_Cu.gbr to C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GL3
+Deleting existing C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GBL
+Renaming C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized-B_Cu.gbr to C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GBL
+Deleting existing C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GTP
+Renaming C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized-F_Paste.gbr to C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GTP
+Deleting existing C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GTO
+Renaming C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized-F_Silkscreen.gbr to C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GTO
+Deleting existing C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GBO
+Renaming C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized-B_Silkscreen.gbr to C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GBO
+Deleting existing C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GTS
+Renaming C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized-F_Mask.gbr to C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GTS
+Deleting existing C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GBS
+Renaming C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized-B_Mask.gbr to C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GBS
+Deleting existing C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GL4
+Renaming C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized-In3_Cu.gbr to C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GL4
+Deleting existing C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GL5
+Renaming C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized-In4_Cu.gbr to C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GL5
+Deleting existing C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GKO
+Renaming C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized-Edge_Cuts.gbr to C:/Users/Dryw/Documents/GitHub/SparkFun_XRP_Controller_Non_Beta/Hardware/Production/SparkFun_XRP_Controller_panelized.GKO
+Drill report: C:\Users\Dryw\Documents\GitHub\SparkFun_XRP_Controller_Non_Beta\Hardware\Production\drill_report.rpt
+
+2024-12-18 16:51:21,137 - cammer_logger - INFO - CAMmer complete
