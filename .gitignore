@@ -68,11 +68,17 @@ local.properties
 ## KiCad
 #############
 
-*cache.lib
-*.kicad_pcb-bak
-*.net
-*.gbr
-*.drl
+#KiCad Backup files
+*.kicad_prl
+fp-info-cache
+sym-lib-table
+~*.lck
+*-bak
+*-backups
+*-cache*
+*-bak*
+_autosave*
+\#auto_saved_files\#
 
 
 #################
