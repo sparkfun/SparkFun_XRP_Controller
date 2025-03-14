@@ -12,7 +12,7 @@ Each version of the XRP Controller has their own hardware overview section linke
         <td><a href="https://docs.sparkfun.com/SparkFun_XRP_Controller/hardware_overview_beta/"><img src="https://cdn.sparkfun.com/assets/parts/2/1/4/3/2/22727-_01.jpg"></a></td>
     </tr>
     <tr>
-        <th style="text-align: center;"><a href="https://docs.sparkfun.com/SparkFun_XRP_Controller/hardware_overview/">SparkFun Experiential Robotics Platform (XRP) Controller</a></td>
-        <th style="text-align: center;"><a href="https://docs.sparkfun.com/SparkFun_XRP_Controller/hardware_overview_beta/">SparkFun Experiential Robotics Platform (XRP) Controller - Beta</a></td>
+        <th style="text-align: center;"><a href="https://docs.sparkfun.com/SparkFun_XRP_Controller/hardware_overview/">SparkFun Experiential Robotics Platform (XRP) Controller</a></th>
+        <th style="text-align: center;"><a href="https://docs.sparkfun.com/SparkFun_XRP_Controller/hardware_overview_beta/">SparkFun Experiential Robotics Platform (XRP) Controller - Beta</a></th>
     </tr>
 </table>
