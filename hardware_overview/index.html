@@ -1475,7 +1475,7 @@
 <h2 id="buttons">Buttons<a class="headerlink" href="#buttons" title="Permanent link"></a></h2>
 <p>The Controller Board has three push buttons labeled <b>USER</b>, <b>RESET</b> and <b>BOOT</b> (on the RP2350). </p>
 <figure>
-<p><a href="./assets/img/XRP-Controller-Push_Buttons.jpg" title="Click to enlarge"><img alt="Photo highlighting buttons." src="../assets/img/XRP-Controller-Buttons.jpg" width="600" /></a></p>
+<p><a href="../assets/img/XRP-Controller-Buttons.jpg" title="Click to enlarge"><img alt="Photo highlighting buttons." src="../assets/img/XRP-Controller-Buttons.jpg" width="600" /></a></p>
 </figure>
 <p>The USER button connects to GPIO36 on the RP2350 which allows it to be programmed for various purposes. The RESET button does just what its name suggests and resets the entire board when pressed. This can help to reboot the robot or to restart a sequence you want the Robotics Kit to perform. Holding the BOOT button either when plugging in a USB cable or when pressing the RESET button sets the RP2350 to behave as a mass storage device when connected to a computer for uploading firmware. </p>
 <h2 id="leds">LEDs<a class="headerlink" href="#leds" title="Permanent link"></a></h2>
@@ -1483,7 +1483,7 @@
 <figure>
 <p><a href="../assets/img/XRP-Controller-LEDs.jpg" title="Click to enlarge"><img alt="Photo highlighting LEDs" src="../assets/img/XRP-Controller-LEDs.jpg" width="600" /></a></p>
 </figure>
-<p>These LEDs are there to provide a visual indication to users. The LEDs labeled <b>MOT</b> and <b>SYS</b> turn on when their respective power rails are powered. The <b>MOT</b> LED turns on when the motors have power available. The <b>SYS</b> LED turns on when the <b>3.3V</b>/System circuit is powered. This circuit powers the RP2350, RM2, sensors, and the expansion connectors. The <b>LOW VOLT</b> LED is a quick visual indicator to notify users that the supply voltage has dropped below the operating threshold and the board is underpowered. This is particularly helpful when powering the XRP Kit with batteries to indicate they need to be recharged or swapped. </p>
+<p>These LEDs are there to provide a visual indication to users. The LEDs labeled <b>MOT</b> and <b>SYS</b> turn on when their respective power rails are powered. The <b>MOT</b> LED turns on when the motors have power available. The <b>SYS</b> LED turns on when the <b>3.3V</b>/System circuit is powered. This circuit powers the RP2350, RM2, sensors, and the expansion connectors. The <b>LOW VOLT</b> LED connects to the 5V Buck regulator POWER_GOOD pin. It provides a quick visual indicator to notify users that the supply voltage has dropped below the operating threshold and the board is underpowered. This is <b>not</b> technically a low battery indicator but it coincidentally starts illuminating when 4xAA batterys are low, depending on the battery chemistry. </p>
 <p>The other two LEDs labeled <b>STAT</b> and <b>RGB</b> are user-programmable status LEDs you can program for whatever behavior you prefer. The <b>STAT</b> LED connects to GPIO0 on the Radio Module and can be useful to indicate behavior from the radio such as connection status or data transmission. The <b>RGB</b> LED connects to GPIO37 on the RP2350 and can be programmed to change to any color based on whatever behavior you'd like. For example, you can have it turn from Green to Red when the distance sensor detects the robot is nearing an obstacle. </p>
 <h2 id="expansion-headers">Expansion Headers<a class="headerlink" href="#expansion-headers" title="Permanent link"></a></h2>
 <p>The XRP Controller Board now features a pair of 2x20 female headers that connect to nearly all the RP2350's and RM2's available pins to allow for more customization options for the XRP platform. Many of these pins are shared between the connectors and other components on the XRP Control Board so take care to ensure they are not being used by any peripherals (motors, sensors, etc.) before connecting and programming them for a different functionality.</p>
@@ -1557,7 +1557,7 @@
         <td>Lets users measure motor current draw using the ADC on IO42. Open to free up IO42 for other use.</td>
     </tr>
     <tr>
-        <td>M-R/4</td>
+        <td>M-R/4 REF</td>
         <td>CLOSED</td>
         <td>Sets the Right/4 DRV8411 motor driver's voltage reference to <b>3.3V</b.</td>
         <td>This sets the DRV8411's reference voltage to match the system voltage. Open to set to a different voltage.</td>
@@ -1571,7 +1571,7 @@
     <tr>
         <td>VIN MEAS</td>
         <td>CLOSED</td>
-        <td></td>
+        <td>Connects the VIN measurement circuit to IO46</td>
         <td>Open to free up IO46 for alternate use</td>
     </tr>
     <tr>
@@ -1919,7 +1919,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="March 13, 2025 17:08:07"><span class="timeago" datetime="2025-03-13T17:08:07+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 13, 2025 17:08:07">2025-03-13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="March 14, 2025 17:18:45"><span class="timeago" datetime="2025-03-14T17:18:45+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 14, 2025 17:18:45">2025-03-14</span>
   </span>
 
     
@@ -2220,7 +2220,7 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.code.annotate", "content.action.edit", "content.tooltips", "navigation.footer", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.path", "navigation.instant.preview", "search.highlight"], "search": "../assets/javascripts/workers/search.c7c1ca2c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.code.annotate", "content.action.edit", "content.tooltips", "navigation.footer", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.path", "search.highlight"], "search": "../assets/javascripts/workers/search.c7c1ca2c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.f807c082.min.js"></script>
