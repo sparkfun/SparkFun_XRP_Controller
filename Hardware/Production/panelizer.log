@@ -1,0 +1,13 @@
+2024-12-18 16:48:30,899 - panelizer_logger - INFO - Running Panelizer
+2024-12-18 16:48:30,904 - panelizer_logger - INFO - ['--panelx', '139.700000', '--panely', '190.500000', '--smaller', '--vscorelayer', 'User.1', '--vscoretextlayer', 'User.1', '--gapx', '0.000000', '--gapy', '0.000000', '--hrail', '6.35', '--vrail', '6.35', '--fiducialpos', '0.25', '--fiducialstb']
+2024-12-18 16:48:30,905 - panelizer_logger - INFO - PANELIZER START: 2024-12-18T16:48:30.905767
+2024-12-18 16:48:58,219 - panelizer_logger - INFO - 
+START: 2024-12-18T16:48:30.905767
+Board saved by user.
+Zones filled by user.
+
+Board: C:\Users\Dryw\Documents\GitHub\SparkFun_XRP_Controller_Non_Beta\Hardware\Production\SparkFun_XRP_Controller_panelized.kicad_pcb
+Board dimensions: 63.50 x 53.98 mm.
+You can fit 2 x 3 boards on the panel.
+
+2024-12-18 16:48:59,977 - panelizer_logger - INFO - Panelizer complete
