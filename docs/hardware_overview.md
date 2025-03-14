@@ -114,7 +114,7 @@ The Qwiic connectors work with SparkFun's [Qwiic ecosystem](https://www.sparkfun
 The Controller Board has three push buttons labeled <b>USER</b>, <b>RESET</b> and <b>BOOT</b> (on the RP2350). 
 
 <figure markdown>
-[![Photo highlighting buttons.](./assets/img/XRP-Controller-Buttons.jpg){width="600"}](./assets/img/XRP-Controller-Push_Buttons.jpg "Click to enlarge")
+[![Photo highlighting buttons.](./assets/img/XRP-Controller-Buttons.jpg){width="600"}](./assets/img/XRP-Controller-Buttons.jpg "Click to enlarge")
 </figure>
 
 The USER button connects to GPIO36 on the RP2350 which allows it to be programmed for various purposes. The RESET button does just what its name suggests and resets the entire board when pressed. This can help to reboot the robot or to restart a sequence you want the Robotics Kit to perform. Holding the BOOT button either when plugging in a USB cable or when pressing the RESET button sets the RP2350 to behave as a mass storage device when connected to a computer for uploading firmware. 
@@ -127,7 +127,7 @@ There are five LEDs on the XRP Controller Board labeled <b>MOT</b>, <b>SYS</b>, 
 [![Photo highlighting LEDs](./assets/img/XRP-Controller-LEDs.jpg){width="600"}](./assets/img/XRP-Controller-LEDs.jpg "Click to enlarge")
 </figure>
 
-These LEDs are there to provide a visual indication to users. The LEDs labeled <b>MOT</b> and <b>SYS</b> turn on when their respective power rails are powered. The <b>MOT</b> LED turns on when the motors have power available. The <b>SYS</b> LED turns on when the <b>3.3V</b>/System circuit is powered. This circuit powers the RP2350, RM2, sensors, and the expansion connectors. The <b>LOW VOLT</b> LED is a quick visual indicator to notify users that the supply voltage has dropped below the operating threshold and the board is underpowered. This is particularly helpful when powering the XRP Kit with batteries to indicate they need to be recharged or swapped. 
+These LEDs are there to provide a visual indication to users. The LEDs labeled <b>MOT</b> and <b>SYS</b> turn on when their respective power rails are powered. The <b>MOT</b> LED turns on when the motors have power available. The <b>SYS</b> LED turns on when the <b>3.3V</b>/System circuit is powered. This circuit powers the RP2350, RM2, sensors, and the expansion connectors. The <b>LOW VOLT</b> LED connects to the 5V Buck regulator POWER_GOOD pin. It provides a quick visual indicator to notify users that the supply voltage has dropped below the operating threshold and the board is underpowered. This is <b>not</b> technically a low battery indicator but it coincidentally starts illuminating when 4xAA batterys are low, depending on the battery chemistry. 
 
 The other two LEDs labeled <b>STAT</b> and <b>RGB</b> are user-programmable status LEDs you can program for whatever behavior you prefer. The <b>STAT</b> LED connects to GPIO0 on the Radio Module and can be useful to indicate behavior from the radio such as connection status or data transmission. The <b>RGB</b> LED connects to GPIO37 on the RP2350 and can be programmed to change to any color based on whatever behavior you'd like. For example, you can have it turn from Green to Red when the distance sensor detects the robot is nearing an obstacle. 
 
@@ -212,7 +212,7 @@ The XRP Controller Board has fourteen solder jumpers. A solder jumper provides a
         <td>Lets users measure motor current draw using the ADC on IO42. Open to free up IO42 for other use.</td>
     </tr>
     <tr>
-        <td>M-R/4</td>
+        <td>M-R/4 REF</td>
         <td>CLOSED</td>
         <td>Sets the Right/4 DRV8411 motor driver's voltage reference to <b>3.3V</b.</td>
         <td>This sets the DRV8411's reference voltage to match the system voltage. Open to set to a different voltage.</td>
@@ -226,7 +226,7 @@ The XRP Controller Board has fourteen solder jumpers. A solder jumper provides a
     <tr>
         <td>VIN MEAS</td>
         <td>CLOSED</td>
-        <td></td>
+        <td>Connects the VIN measurement circuit to IO46</td>
         <td>Open to free up IO46 for alternate use</td>
     </tr>
     <tr>

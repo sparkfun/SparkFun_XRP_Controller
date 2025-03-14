@@ -70,7 +70,7 @@ theme:
     - navigation.path
 
     # Enables instant previews globally, for all internal links
-    - navigation.instant.preview
+    # - navigation.instant.preview
 
     # Highlights all occurrences of a search result when clicked on
     - search.highlight

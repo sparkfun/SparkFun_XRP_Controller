@@ -7,8 +7,8 @@ SparkFun XRP Controller
         <td><a href="https://www.sparkfun.com/sparkfun-experiential-robotics-platform-xrp-controller-beta.html"><img src="https://cdn.sparkfun.com/assets/parts/2/1/4/3/2/22727-_01.jpg"></a></td>
     </tr>
     <tr>
-        <th style="text-align: center;"><a href="https://www.sparkfun.com/sparkfun-experiential-robotics-platform-xrp-controller.html"><i>SparkFun XRP Controller</i></a></td>
-        <th style="text-align: center;"><a href="https://www.sparkfun.com/sparkfun-experiential-robotics-platform-xrp-controller-beta.html"><i>SparkFun XRP Controller - Beta</i></a></td>
+        <th style="text-align: center;"><a href="https://www.sparkfun.com/sparkfun-experiential-robotics-platform-xrp-controller.html"><i>SparkFun XRP Controller</i></a></th>
+        <th style="text-align: center;"><a href="https://www.sparkfun.com/sparkfun-experiential-robotics-platform-xrp-controller-beta.html"><i>SparkFun XRP Controller - Beta</i></a></th>
     </tr>
 </table>
 

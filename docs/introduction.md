@@ -1,7 +1,3 @@
-
-
-
-
 Welcome to the SparkFun Experiential Robotics Platform (XRP) Controller Hardware Overview. This document provides detailed overviews of the hardware present on both versions of the XRP Controller; the [XRP Controller](https://www.sparkfun.com/sparkfun-experiential-robotics-platform-xrp-controller.html) and [XRP Controller - Beta](https://www.sparkfun.com/sparkfun-experiential-robotics-platform-xrp-controller-beta.html).
 
 Each version of the XRP Controller has their own hardware overview section linked in the navigation menu to the left. If you're not sure which version to select, click on the image below matching the XRP Controller you have:
