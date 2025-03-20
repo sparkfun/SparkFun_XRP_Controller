@@ -21,4 +21,5 @@ For more information about both versions of the XRP Controller covered in this d
 
 * [XRP Robotis Platform Home Page](https://experientialrobotics.org/)
 * [GitHub Hardware Repository](https://github.com/sparkfun/SparkFun_XRP_Controller)
-* [XRP Chassis 3D Printing Files](https://www.printables.com/model/576581-xrp-robot-part-of-the-experiential-consortia)
+* [XRP Chassis 3D Printing Files](https://www.printables.com/model/1216372-xrp-robot-kit)
+* [XRP Chassis 3D Printing Files - Beta Version](https://www.printables.com/model/576581-xrp-robot-part-of-the-experiential-consortia)
