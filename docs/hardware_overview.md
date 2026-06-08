@@ -53,7 +53,7 @@ Now let's take a closer look at the parts on this board used for providing power
 
 ### Barrel Jack Connector
 
-The barrel jack connector is the primary power input for the entire XRP Kit. This connector mates with the cable from the XRP Kit's battery pack for battery-powered operation. Take note that the maximum safe voltage that can be applied to this connector is <b>11V</b> and the minimum to run the system is <b>5V</b>. The 4-AA battery pack included with the kit supplies a maximum of <b>6V</b> so most users will have no issues exceeding the max voltage.
+The barrel jack connector is the primary power input for the entire XRP Kit. This connector mates with the cable from the XRP Kit's battery pack for battery-powered operation. Take note that the maximum safe voltage that can be applied to this connector is <b>11V</b> and the minimum recommended voltage to run the system is <b>4.8V</b> so you can use non-alkaline batteries like NiMH cells. The 4-AA battery pack included with the kit supplies a maximum of <b>6V</b> so most users will have no issues exceeding the max voltage.
 
 ### USB-C Connector
 
